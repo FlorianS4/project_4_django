@@ -60,7 +60,8 @@ ROOT_URLCONF = 'gamecrit.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                 os.path.join(BASE_DIR, 'gamecrit_post', 'templates', 'gamecrit_post'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

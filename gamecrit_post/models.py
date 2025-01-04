@@ -14,6 +14,7 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     post_private = models.BooleanField(default=False)
+    approved = models.BooleanField(default=False)
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
@@ -23,10 +24,12 @@ class Post(models.Model):
         return f"{self.post_name} | written by {self.username}"
 
 class Comment(models.Model):
-    post = models.ForeignKey(
+    post_id = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name="comments")
-    author = models.ForeignKey(
+    username = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="commenter")
-    body = models.TextField()
+    comment_field = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
+    status = models.IntegerField(choices=STATUS, default=0)

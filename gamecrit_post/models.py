@@ -5,14 +5,22 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
 class Post(models.Model):
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(
-    User, on_delete=models.CASCADE, related_name="gamecrit_post_blog"
+    post_name = models.CharField(max_length=200, unique=True)
+    username = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="gamecrit_post_blog"
     )
-    content = models.TextField()
+    post_field = models.TextField()
+    youtube_link = models.URLField(max_length=300, default=False)
     created_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
+    post_private = models.BooleanField(default=False)
     status = models.IntegerField(choices=STATUS, default=0)
+
+    class Meta:
+        ordering = ["-created_on"]
+
+    def __str__(self):
+        return f"{self.post_name} | written by {self.username}"
 
 class Comment(models.Model):
     post = models.ForeignKey(

@@ -23,11 +23,11 @@ def display_game_review(request, slug):
     :template:`blog/post_detail.html`
     """
 
-    queryset = gamecrit_post.objects.filter(status=1)
-    post = get_object_or_404(queryset, slug=slug)
+    queryset = Post.objects.filter(status=1)
+    gamecrit_post = get_object_or_404(queryset, slug=slug)
 
     return render(
         request,
-        "gamecrit_post/index.html",
+        "gamecrit_post/display_game_review.html",
         {"gamecrit_post": gamecrit_post},
     )

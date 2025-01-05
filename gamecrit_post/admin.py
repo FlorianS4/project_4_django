@@ -7,7 +7,7 @@ class PostAdmin(SummernoteModelAdmin):
 
     list_display = ('post_name', 'status')
     search_fields = ['post_name',]
-    list_filter = ('status',)
+    list_filter = ('status', 'created_on',)
     summernote_fields = ('post_field',)
 
 # Register your models here.

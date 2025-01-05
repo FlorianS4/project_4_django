@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    <h1>Posts list</h1>
+    {% for post in object_list %}
+    <div>
+        <h2>{{post.post_name}}</h2>
+        <p>{{post.post_field}}</p>
+        <p>Author: {{post.username}}</p>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+<!-- index.html content ends here -->
+{% endblock %}

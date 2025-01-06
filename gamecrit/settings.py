@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_summernote',
     'gamecrit_post',
+    'gamecrit_contact',
 ]
 
 MIDDLEWARE = [

@@ -13,3 +13,9 @@ class GameCritContact(models.Model):
     contact_email = models.EmailField(max_length=200)
     contact_field = models.TextField()
     contact_created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_on"]
+
+    def __str__(self):
+        return f"{self.contact_field} | submitted by {self.contact_name}"

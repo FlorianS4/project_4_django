@@ -14,8 +14,15 @@ class GameCritContact(models.Model):
     contact_field = models.TextField()
     contact_created_on = models.DateTimeField(auto_now_add=True)
 
+    """
+    had to remove ordering: 
+    ERRORS:
+    gamecrit_contact.GameCritContact: (models.E015) 'ordering' refers to the nonexistent field, related field, or lookup 'created_on'.
+
     class Meta:
         ordering = ["-created_on"]
-
+    """
+    
+        
     def __str__(self):
         return f"{self.contact_field} | submitted by {self.contact_name}"

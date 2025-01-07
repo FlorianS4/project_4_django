@@ -5,7 +5,7 @@ from .models import GameCritContact
 # Create your views here.
 
 class GameCritContactList(generic.ListView):
-    queryset = GameCritContact.objects.all().order_by("created_on")
+    queryset = GameCritContact.objects.all().order_by("contact_created_on")
     template_name = "gamecrit_contact/gamecrit_contact.html"
     paginate_by = 3
 

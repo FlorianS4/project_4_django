@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import Post
+from .forms import CommentForm
 
 # Create your views here.
 
@@ -27,6 +28,7 @@ def display_game_review(request, slug):
     gamecrit_post = get_object_or_404(queryset, slug=slug)
     comments = gamecrit_post.comments.all().order_by("-created_on")
     comment_count = gamecrit_post.comments.filter(approved=True).count()
+    comment_form = GameCritCommentForm()
 
     return render(
         request,
@@ -34,5 +36,6 @@ def display_game_review(request, slug):
         {"gamecrit_post": gamecrit_post,
         "comments": comments,
         "comment_count": comment_count,
+        "comment_form": comment_form,
         },
     )

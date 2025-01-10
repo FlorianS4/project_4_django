@@ -5,4 +5,4 @@ from django import forms
 class GameCritCommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ('body',)
+        fields = ('comment_field',)

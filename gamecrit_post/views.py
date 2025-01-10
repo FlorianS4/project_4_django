@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
+from django.contrib import messages
 from .models import Post
 from .forms import GameCritCommentForm
 
@@ -36,6 +37,10 @@ def display_game_review(request, slug):
             comment.username = request.user
             comment.post_id = gamecrit_post
             comment.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Thank you for the comment. It is now in queue to be approved!'
+    )
 
     comment_form = GameCritCommentForm()
 

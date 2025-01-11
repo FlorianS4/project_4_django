@@ -1,17 +1,18 @@
 from django.shortcuts import render
 from .models import GameCritContact
+from .forms import GameCritContactForm
 
 # Create your views here.
 
-def game_crit_contact(request):
+def gamecrit_contact(request):
     """
     User can get in contact with site owner
     """
-    contact_form = ContactForm()
+    contact_form = GameCritContactForm()
 
     return render(
         request,
-        "gamecrit_contact/gamecrit_contact.html",
+        "gamecrit_contact.html",
         {
            "contact_form": contact_form,  
         }

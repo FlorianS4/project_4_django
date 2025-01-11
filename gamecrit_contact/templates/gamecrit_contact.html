@@ -16,7 +16,7 @@
 
             <!--Test Form is underneath this-->
             <form method="post">
-                {{ gamecrit_contact | crispy }}
+                {{ contact_form | crispy }}
                 {% csrf_token %}
                 <button class="btn btn-secondary" type="submit">Submit</button>
             </form>

@@ -1,8 +1,26 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
 {% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <h2>Gamecrit Contact</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 my-5">
+            <h2>Test TEst Test </h2>
+            <p>A Form should be underneath this p line, lets hope it works!</p>
 
-<!-- base.html begins -->
-<h1>test test test test</h1>
-
-<!-- base.html ends -->
-{% endblock %}
+            <!--Test Form is underneath this-->
+            <form method="post">
+                {{ gamecrit_contact | crispy }}
+                {% csrf_token %}
+                <button class="btn btn-secondary" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

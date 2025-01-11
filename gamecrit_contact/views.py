@@ -1,11 +1,18 @@
-from django.shortcuts import render, get_object_or_404
-from django.views import generic
+from django.shortcuts import render
 from .models import GameCritContact
 
 # Create your views here.
 
-class GameCritContactList(generic.ListView):
-    queryset = GameCritContact.objects.all().order_by("contact_created_on")
-    template_name = "gamecrit_contact/gamecrit_contact.html"
-    paginate_by = 3
+def game_crit_contact(request):
+    """
+    User can get in contact with site owner
+    """
+    contact_form = ContactForm()
 
+    return render(
+        request,
+        "gamecrit_contact/gamecrit_contact.html",
+        {
+           "contact_form": contact_form,  
+        }
+    )

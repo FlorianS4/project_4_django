@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404
+from django.urls import reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
@@ -60,12 +61,10 @@ def comment_edit(request, slug, comment_id):
     view to edit comments
     """
     if request.method == "POST":
-
         queryset = Post.objects.filter(status=1)
         gamecrit_post = get_object_or_404(queryset, slug=slug)
         comment = get_object_or_404(Comment, pk=comment_id)
-        comment_form = CommentForm(data=request.POST, instance=comment)
-
+        comment_form = GameCritCommentForm(data=request.POST, instance=comment)
         if comment_form.is_valid() and comment.username == request.user:
             comment = comment_form.save(commit=False)
             comment.post_id = gamecrit_post
@@ -75,4 +74,5 @@ def comment_edit(request, slug, comment_id):
         else:
             messages.add_message(request, messages.ERROR, 'Error updating comment!')
 
-    return HttpResponseRedirect(reverse('post_detail', args=[slug]))  
+    return HttpResponseRedirect(reverse('display_game_review', args=[slug]))
+

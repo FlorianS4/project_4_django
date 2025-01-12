@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!--Delete post used Tutorial: https://www.youtube.com/watch?v=nFa3lC105dM-->
+<div class="container">
+    <h1>Delete Post Site</h1>
+    <br>
+    <div class="row justify-content-center ">
+        {% if user.is_authenticated %}
+        <div class="col-11 col-md-8 col-lg-6 mt-3">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <p>Are you sure you want to delete "{{object.post_name}}"?</p>
+                <input type="submit" value="Confirm" class="btn btn-primary w-25">
+            </form>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{%endblock%}

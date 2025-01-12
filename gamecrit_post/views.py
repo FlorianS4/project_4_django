@@ -2,8 +2,9 @@ from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from django.views import generic
 from django.contrib import messages
-from django.views.generic import CreateView
+from django.views.generic import CreateView, Deleteview
 from django.http import HttpResponseRedirect
+from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from .models import Post, Comment
 from .forms import GamecritPostForm, GameCritCommentForm
 
@@ -31,6 +32,20 @@ class AddGamecritPost(CreateView):
         return super(AddGamecritPost, self).form_valid(form)
 
 
+class DeleteGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.Deleteview):
+    """
+    Add gamecrit delete view
+    A user that is logged in can delete one of his own post
+    used this video as tutorial: https://www.youtube.com/watch?v=nFa3lC105dM
+    """
+    model = Post
+    success_url = "/"
+
+    def test_func(self):
+        """
+        return True or False
+        """
+        return self.request.user == self.get.object().user
 
 def display_game_review(request, slug):
     """

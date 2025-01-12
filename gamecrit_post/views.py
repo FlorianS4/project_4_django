@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from django.views import generic
 from django.contrib import messages
+from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import GameCritCommentForm
@@ -12,6 +13,22 @@ class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("created_on")
     template_name = "gamecrit_post/index.html"
     paginate_by = 4
+
+
+class AddGamecritPost(CreateView):
+    """
+    Add gamecrit post view
+    A user that is logged in can create a new post to the database
+    """
+    template_name = "gamecrit_post/gamecrit_post.html"
+    model = Post
+    success_url = "/"
+
+    def form_valid(self, form):
+        form.instance.username = self.request.user
+        return super(AddGamecritPost, self).form_valid(form)
+
+
 
 def display_game_review(request, slug):
     """

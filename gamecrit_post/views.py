@@ -57,6 +57,7 @@ class EditGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateVi
     """
     template_name = "gamecrit_post/edit_gamecrit_post.html"
     model = Post
+    form_class = GamecritPostForm
     success_url = "/"
 
     def test_func(self):

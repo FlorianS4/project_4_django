@@ -7,8 +7,8 @@ class GamecritPostForm(forms.ModelForm):
     Form to create a post
     """
     class Meta:
-        model = post
-        fields = ('post_name', 'slug', 'post_field', 'youtube_link',)
+        model = Post
+        fields = ('post_name', 'post_field', 'youtube_link',)
 
 
 class GameCritCommentForm(forms.ModelForm):

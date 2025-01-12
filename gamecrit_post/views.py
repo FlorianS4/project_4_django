@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
-from .forms import GameCritCommentForm
+from .forms import GamecritPostForm, GameCritCommentForm
 
 # Create your views here.
 
@@ -19,9 +19,11 @@ class AddGamecritPost(CreateView):
     """
     Add gamecrit post view
     A user that is logged in can create a new post to the database
+    used this video as tutorial: https://www.youtube.com/watch?v=vXMTp_1_L7Y
     """
     template_name = "gamecrit_post/gamecrit_post.html"
     model = Post
+    form_class = GamecritPostForm
     success_url = "/"
 
     def form_valid(self, form):

@@ -30,6 +30,12 @@
             </div>
         </div>
     </div>
+    <!--Delete button for Post-->
+    {% if user.is_authenticated and gamecrit_post.username == request.user %}
+    <span class="text-center">
+        <a href="{% url 'delete_gamecrit_post' gamecrit_post.id %}" class="btn btn-primary w-25">Delete this post!</a>
+    </span>
+    {% endif %}
     <!-- Displaying count of comments -->
     <div class="row">
         <div class="col-12">

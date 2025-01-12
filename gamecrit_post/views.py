@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from django.views import generic
 from django.contrib import messages
-from django.views.generic import CreateView, Deleteview
+from django.views.generic import CreateView, DeleteView
 from django.http import HttpResponseRedirect
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from .models import Post, Comment
@@ -32,20 +32,21 @@ class AddGamecritPost(CreateView):
         return super(AddGamecritPost, self).form_valid(form)
 
 
-class DeleteGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.Deleteview):
+class DeleteGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
     """
     Add gamecrit delete view
     A user that is logged in can delete one of his own post
     used this video as tutorial: https://www.youtube.com/watch?v=nFa3lC105dM
     """
     model = Post
+    template_name = "gamecrit_post/delete_gamecrit_post.html"
     success_url = "/"
 
     def test_func(self):
         """
         return True or False
         """
-        return self.request.user == self.get.object().user
+        return self.request.user == self.get_object().username
 
 def display_game_review(request, slug):
     """

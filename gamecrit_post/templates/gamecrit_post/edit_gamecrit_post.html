@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<!--Create GameCrit Form-->
+<!--used this video as tutorial: https://www.youtube.com/watch?v=JzDBCZTgVyw&t=1s-->
+<div class="container">
+    <h1>Edit your own review here!</h1>
+    <br>
+    <div class="row justify-content-center ">
+        {% if user.is_authenticated %}
+        <div class="col-11 col-md-8 col-lg-6 mt-3">
+            <form method="post" enctype="multipart/form-data">
+                {{ form | crispy }}
+                {% csrf_token %}
+                <button type="submit" class="btn btn-outline-dark">Edit your review</button>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{%endblock%}

@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 from django.views import generic
 from django.contrib import messages
-from django.views.generic import CreateView, DeleteView
+from django.views.generic import CreateView, DeleteView, UpdateView
 from django.http import HttpResponseRedirect
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from .models import Post, Comment
@@ -40,6 +40,23 @@ class DeleteGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.Delete
     """
     model = Post
     template_name = "gamecrit_post/delete_gamecrit_post.html"
+    form_class = GamecritPostForm
+    success_url = "/"
+
+    def test_func(self):
+        """
+        return True or False
+        """
+        return self.request.user == self.get_object().username
+
+class EditGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
+    """
+    Add gamecrit edit post view
+    The user who created the post can edit it
+    usde this video as tutorial: https://www.youtube.com/watch?v=JzDBCZTgVyw&t=1s
+    """
+    template_name = "gamecrit_post/edit_gamecrit_post.html"
+    model = Post
     success_url = "/"
 
     def test_func(self):

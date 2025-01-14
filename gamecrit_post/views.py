@@ -145,3 +145,13 @@ def comment_delete(request, slug, comment_id):
             request, messages.ERROR, 'You can only delete your own comments!')
     return HttpResponseRedirect(reverse('display_game_review', args=[slug]))
 
+class AddLike(View):
+
+
+    def post(self, request, slug, *args, **kwargs):
+        post = get_object_or_404(Post, slug=slug)
+        if post.gamecrit_post_blog_likes.filter(id=request.user.id).exists():
+            post.gamecrit_post_blog_likes.remove(request.user)
+        else:
+            post.gamecrit_post_blog_likes.add(request.user)
+        return HttpResponseRedirect(reverse('display_game_review', args=[slug]))

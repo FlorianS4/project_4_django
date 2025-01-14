@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
-from django.views import generic
+from django.views import generic, View
 from django.contrib import messages
 from django.views.generic import CreateView, DeleteView, UpdateView
 from django.http import HttpResponseRedirect

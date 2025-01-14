@@ -17,12 +17,16 @@ class Post(models.Model):
     post_private = models.BooleanField(default=False)
     approved = models.BooleanField(default=False)
     status = models.IntegerField(choices=STATUS, default=0)
+    gamecrit_post_blog_likes = models.ManyToManyField(User, related_name="gamecrit_post_like", blank=True)
 
     class Meta:
         ordering = ["-created_on"]
 
     def __str__(self):
         return f"{self.post_name} | written by {self.username}"
+
+    def number_of_gamecrit_post_blog_likes(self):
+        return self.gamecrit_post_blog_likes.count()
 
 class Comment(models.Model):
     post_id = models.ForeignKey(

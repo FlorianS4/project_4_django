@@ -87,6 +87,9 @@ def display_game_review(request, slug):
     gamecrit_post_blog_liked = False
     if gamecrit_post.gamecrit_post_blog_likes.filter(id=request.user.id).exists():
         gamecrit_post_blog_liked = True
+    is_bookmarked = False
+    if gamecrit_post.bookmarks.filter(id=request.user.id).exists():
+        is_bookmarked = True
 
 
     if request.method == "POST":
@@ -111,6 +114,7 @@ def display_game_review(request, slug):
         "comment_count": comment_count,
         "comment_form": comment_form,
         "gamecrit_post_blog_liked": gamecrit_post_blog_liked,
+        "is_bookmarked": is_bookmarked,
         },
     )
 
@@ -161,3 +165,23 @@ class AddLike(View):
             post.gamecrit_post_blog_likes.add(request.user)
         return HttpResponseRedirect(reverse('display_game_review', args=[slug]))
 
+
+class BookmarkPost(LoginRequiredMixin, View):
+    """
+    Signed in user can bookmark a gamecrit-post
+    """
+    def post(self, request, slug):
+        """
+        Select or deselect user from the databse, based on
+        whether the user.id already exists in the database.
+        """
+        post = get_object_or_404(Post, slug=slug)
+        if post.bookmarks.filter(id=request.user.id).exists():
+            post.bookmarks.remove(request.user)
+            messages.success(self.request, 'Post removed from bookmarks')
+        else:
+            post.bookmarks.add(request.user)
+            messages.success(self.request, 'Post added to bookmarks')
+
+
+        return HttpResponseRedirect(reverse('display_game_review', args=[slug]))

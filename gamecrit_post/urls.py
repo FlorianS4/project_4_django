@@ -10,4 +10,5 @@ urlpatterns = [
     path('<slug:slug>/comment_edit/<int:comment_id>/', views.comment_edit, name='comment_edit'),
     path('<slug:slug>/delete_comment/<int:comment_id>/', views.comment_delete, name='comment_delete'),
     path('like/<slug:slug>', views.AddLike.as_view(), name='add_like'),
+    path('bookmark/<slug:slug>', views.BookmarkPost.as_view(), name='bookmark_post'),
 ]

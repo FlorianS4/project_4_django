@@ -71,6 +71,24 @@
             <hr>
         </div>
     </div>
+    <!--Bookmark Post-->
+    <div class="row">
+        <div class="col-1">
+            {% if user.is_authenticated %}
+            <form class="d-inline" action="{% url 'bookmark_post' gamecrit_post.slug %}" method="POST">
+                {% csrf_token %}
+                {% if is_bookmarked  %}
+                <button class="action-btn btn btn-info" type="submit" name="bookmark_id" value="{{gamecrit_post.slug}}"
+                    aria-label="bookmark button to deselect gamecrit post from bookmarks">
+                    <i class="fas fa-bookmark"></i></button>
+                {% else %}
+                <button class="action-btn btn btn-info" type="submit" name="bookmark_id" value="{{gamecrit_post.slug}}"
+                    aria-label="bookmark button to save gamecrit post"><i class="far fa-bookmark"></i></button>
+                {% endif %}
+            </form>
+            {% endif %}
+        </div>
+    </div>
     <!-- Displaying Comments -->
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 ">

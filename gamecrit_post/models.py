@@ -18,6 +18,7 @@ class Post(models.Model):
     approved = models.BooleanField(default=False)
     status = models.IntegerField(choices=STATUS, default=0)
     gamecrit_post_blog_likes = models.ManyToManyField(User, related_name="gamecrit_post_like", blank=True)
+    bookmarks = models.ManyToManyField(User, related_name="bookmark", default=None, blank=True)
 
     class Meta:
         ordering = ["-created_on"]

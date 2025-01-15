@@ -88,6 +88,7 @@ def display_game_review(request, slug):
     if gamecrit_post.gamecrit_post_blog_likes.filter(id=request.user.id).exists():
         gamecrit_post_blog_liked = True
 
+
     if request.method == "POST":
         comment_form = GameCritCommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -159,3 +160,4 @@ class AddLike(View):
         else:
             post.gamecrit_post_blog_likes.add(request.user)
         return HttpResponseRedirect(reverse('display_game_review', args=[slug]))
+

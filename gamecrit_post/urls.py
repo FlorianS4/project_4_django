@@ -9,5 +9,5 @@ urlpatterns = [
     path('edit/<slug:pk>/', views.EditGamecritPost.as_view(), name='edit_gamecrit_post'),
     path('<slug:slug>/comment_edit/<int:comment_id>/', views.comment_edit, name='comment_edit'),
     path('<slug:slug>/delete_comment/<int:comment_id>/', views.comment_delete, name='comment_delete'),
-     path('like/<slug:slug>', views.AddLike.as_view(), name='add_like'),
+    path('like/<slug:slug>', views.AddLike.as_view(), name='add_like'),
 ]

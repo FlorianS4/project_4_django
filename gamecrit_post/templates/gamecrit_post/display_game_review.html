@@ -45,7 +45,7 @@
             {% if user.is_authenticated %}
             <form class="d-inline" action="{% url 'add_like' gamecrit_post.slug %}" method="POST">
                 {% csrf_token %}
-                {% if liked %}
+                {% if gamecrit_post_blog_liked %}
                 <button type="submit" name="gamecrit_like_id" value="{{gamecrit_post.slug}}" class="btn-like"
                     aria-label="unlike this post"><i class="fas fa-heart"></i></button>
                 {% else %}
@@ -57,7 +57,7 @@
             <span class="text-secondary"><i class="far fa-heart"></i></span>
             {% endif %}
             <!-- The number of likes goes before the closing strong tag -->
-            <span class="text-secondary">{{ post.number_of_gamecrit_post_blog_likes }} </span>
+            <span class="text-secondary">{{ gamecrit_post_blog_likes_count }} </span>
         </div>
     </div>
     <!-- Displaying count of comments -->

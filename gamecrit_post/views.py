@@ -84,6 +84,9 @@ def display_game_review(request, slug):
     gamecrit_post = get_object_or_404(queryset, slug=slug)
     comments = gamecrit_post.comments.all().order_by("-created_on")
     comment_count = gamecrit_post.comments.filter(approved=True).count()
+    gamecrit_post_blog_liked = False
+    if gamecrit_post.gamecrit_post_blog_likes.filter(id=request.user.id).exists():
+        gamecrit_post_blog_liked = True
 
     if request.method == "POST":
         comment_form = GameCritCommentForm(data=request.POST)
@@ -106,6 +109,7 @@ def display_game_review(request, slug):
         "comments": comments,
         "comment_count": comment_count,
         "comment_form": comment_form,
+        "gamecrit_post_blog_liked": gamecrit_post_blog_liked,
         },
     )
 

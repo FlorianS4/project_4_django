@@ -185,3 +185,17 @@ class BookmarkPost(LoginRequiredMixin, View):
 
 
         return HttpResponseRedirect(reverse('display_game_review', args=[slug]))
+
+class ShowBookmarks(LoginRequiredMixin, generic.ListView):
+    """
+    Signed in user can see their gamecrit_post bookmarks on a seperate page
+    """
+    model = Post
+    template_name = 'show_bookmarks.html'
+    pagiante_by = 6
+
+    def get_queryset(self):
+        """
+        get bookmarked post from user
+        """
+        return Post.objects.filter(bookmarks=self.request.user.id)

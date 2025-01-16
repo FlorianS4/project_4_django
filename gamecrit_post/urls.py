@@ -4,11 +4,12 @@ from django.urls import path
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
     path('addgamecritpost/', views.AddGamecritPost.as_view(), name='add_gamecrit_post'),
+    path('bookmark/<slug:slug>', views.BookmarkPost.as_view(), name='bookmark_post'),
+    path('showbookmarks/', views.ShowBookmarks.as_view(), name='show_bookmarks'),
     path('<slug:slug>/', views.display_game_review, name='display_game_review'),
     path('delete/<slug:pk>/', views.DeleteGamecritPost.as_view(), name='delete_gamecrit_post'),
     path('edit/<slug:pk>/', views.EditGamecritPost.as_view(), name='edit_gamecrit_post'),
     path('<slug:slug>/comment_edit/<int:comment_id>/', views.comment_edit, name='comment_edit'),
     path('<slug:slug>/delete_comment/<int:comment_id>/', views.comment_delete, name='comment_delete'),
     path('like/<slug:slug>', views.AddLike.as_view(), name='add_like'),
-    path('bookmark/<slug:slug>', views.BookmarkPost.as_view(), name='bookmark_post'),
 ]

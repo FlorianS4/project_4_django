@@ -54,6 +54,10 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
+                        <a class="nav-link" aria-current="add gamecrit post"
+                            href="{% url 'add_gamecrit_post' %}">Create your own review</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" aria-current="bookmarks page"
                             href="{% url 'show_bookmarks' %}">Bookmarks</a>
                     </li>

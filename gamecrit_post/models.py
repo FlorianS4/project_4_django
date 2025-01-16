@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -19,6 +20,7 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     gamecrit_post_blog_likes = models.ManyToManyField(User, related_name="gamecrit_post_like", blank=True)
     bookmarks = models.ManyToManyField(User, related_name="bookmark", default=None, blank=True)
+    post_image = CloudinaryField('image,', default='placeholder')
 
     class Meta:
         ordering = ["-created_on"]

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 <!--<div>
     <h1>Posts list</h1>
@@ -34,7 +34,13 @@
                             <a href="{% url 'display_game_review' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.post_name }}</h2>
                             </a>
-
+                            <div class="image-container">
+                                {% if "placeholder" in post.post_image.url %}
+                                <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                                {% else %}
+                                <img class="card-img-top" src="{{ post.post_image.url }}" alt="{{ post.post_name }}"> 
+                                {% endif %}
+                            </div>
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_on }}
                             </p>

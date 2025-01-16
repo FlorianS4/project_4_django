@@ -8,7 +8,7 @@ class GamecritPostForm(forms.ModelForm):
     """
     class Meta:
         model = Post
-        fields = ('post_name', 'post_field', 'youtube_link',)
+        fields = ('post_name', 'post_field', 'post_image', 'youtube_link',)
 
 
 class GameCritCommentForm(forms.ModelForm):

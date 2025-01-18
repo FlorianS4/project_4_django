@@ -40,7 +40,6 @@ class DeleteGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.Delete
     """
     model = Post
     template_name = "gamecrit_post/delete_gamecrit_post.html"
-    form_class = GamecritPostForm
     success_url = "/"
 
     def test_func(self):

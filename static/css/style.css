@@ -1,12 +1,16 @@
-body {
-    background-color: #F9FAFC;
+body, .navbar-light {
+    background-color: #c2b329;
 }
 
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #fff;
+}
+
+.red-crit {
+    color: rgb(145, 12, 7);
 }
 
 .red-o {
@@ -160,9 +164,17 @@ body {
     color: rgb(222, 146, 168);
 }
 
+#hide-text {
+    display: none;
+}
+
 @media screen and (min-width: 992px){
     #navbarText {
         display: flex;
         justify-content: flex-end;
+    }
+
+    #hide-text {
+        display: unset;
     }
 }

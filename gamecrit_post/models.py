@@ -15,7 +15,6 @@ class Post(models.Model):
     youtube_link = models.URLField(max_length=300, default=False)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
-    post_private = models.BooleanField(default=False)
     approved = models.BooleanField(default=False)
     status = models.IntegerField(choices=STATUS, default=0)
     gamecrit_post_blog_likes = models.ManyToManyField(User, related_name="gamecrit_post_like", blank=True)

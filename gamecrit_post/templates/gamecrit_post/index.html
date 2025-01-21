@@ -1,21 +1,21 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<!--<div>
-    <h1>Posts list</h1>
-    {% for post in object_list %}
-    <div>
-        <h2>{{post.post_name}}</h2>
-        <p>{{post.post_field}}</p>
-        <p>Author: {{post.username}}</p>
-    </div>
-
-    {% endfor %}
-
-</div>
--->
 
 <!-- index.html content starts here -->
+<div id="gamecrit-explanation">
+    <div id="all-about-gamecrit">
+        <div id="all-about-header">
+            <h1>GameCrit!</h1>
+            <p>Hello and welcome to gamecrit!<br>a blogside where you can share you opinions about videogames, discuss with other members or just check
+                out blogs from other users and see if a game is to your liking! <br> <strong> Enjoy!!</strong></p>
+        </div>
+    </div>
+    <div id="buttons-all-about-gamecrit">
+        <a class="btn btn-info" aria-current="page" href="{% url 'account_signup' %}">Register</a>
+        <a class="btn btn-info" aria-current="page" href="{% url 'account_login' %}">Login</a>
+    </div>
+</div>
 <div class="container-fluid">
     <div class="row">
 
@@ -36,9 +36,10 @@
                             </a>
                             <div class="image-container">
                                 {% if "placeholder" in post.post_image.url %}
-                                <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                                <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                                    alt="placeholder image">
                                 {% else %}
-                                <img class="card-img-top" src="{{ post.post_image.url }}" alt="{{ post.post_name }}"> 
+                                <img class="card-img-top" src="{{ post.post_image.url }}" alt="{{ post.post_name }}">
                                 {% endif %}
                             </div>
                             <hr />

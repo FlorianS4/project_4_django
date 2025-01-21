@@ -167,6 +167,51 @@ body, .navbar-light {
 #hide-text {
     display: none;
 }
+/* styling for gamecrit explanation */
+
+#gamecrit-explanation {
+    display: flex;
+    width: 90%;
+    height: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+#all-about-gamecrit {
+
+}
+
+#all-about-header {
+    display: flex;
+    align-items: left;
+    width: 95%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    text-align: left;
+    flex-direction: column;
+}
+
+#buttons-all-about-gamecrit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#buttons-all-about-gamecrit .btn {
+    width: 200px;
+    height: 45px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
 
 @media screen and (min-width: 992px){
     #navbarText {

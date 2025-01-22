@@ -171,18 +171,21 @@ body, .navbar-light {
 
 #gamecrit-explanation {
     display: flex;
-    width: 90%;
-    height: 250px;
+    width: 80%;
+    height: 590px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     justify-content: space-between;
+    background: url(../images/banner.webp) no-repeat center center/cover;
 }
 
+/*
 #all-about-gamecrit {
 
 }
+*/
 
 #all-about-header {
     display: flex;
@@ -195,6 +198,16 @@ body, .navbar-light {
     padding-left: 20px;
     text-align: left;
     flex-direction: column;
+    color: #d3d3d3;
+    margin-top: 130px;
+}
+
+#buttons-all-about-gamecrit, #all-about-header {
+    background-color: rgba(0,0,0,0.5);
+}
+
+#all-about-header p {
+    width: 80%;
 }
 
 #buttons-all-about-gamecrit {
@@ -211,6 +224,8 @@ body, .navbar-light {
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: bolder;
+    margin-right: 40px;
+    background-color: #2cff05;
 }
 
 @media screen and (min-width: 992px){

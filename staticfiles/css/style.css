@@ -1,12 +1,16 @@
-body {
-    background-color: #F9FAFC;
+body, .navbar-light, .footer {
+    background-color: #c2b329;
 }
 
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #fff;
+}
+
+.red-crit {
+    color: rgb(145, 12, 7);
 }
 
 .red-o {
@@ -34,6 +38,14 @@ body {
     background-color: transparent;
 }
 
+.card-title {
+    max-height: 38px;
+}
+
+#image-size-1, #image-size-2 {
+    max-height: 270px;
+}
+
 .image-container {
     position: relative;
 }
@@ -43,7 +55,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #c2b329;
 }
 
 .scale {
@@ -62,33 +74,45 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    max-height: 160px;
     width: 100%;
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #c2b329;
     color: white;
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.masthead-image {
-    position: relative;
-    overflow: hidden;
+.masthead-text h1 {
+    margin-top: unset;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+.blog-text {
+    background-color: lightgrey;
+}
+
+.blog-card-text {
+    font-size: 1.05rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Comments */
+.comment-number {
+    padding-left: 5px;
+}
+
+.comment-text {
+    background-color: lightgrey;
+}
+
+.comment-body {
+    font-size: larger;
 }
 
 .post-link {
@@ -104,27 +128,27 @@ body {
 .post-title {
     margin-top: 10%;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
-}
-
-.btn-signup,
-.btn-edit {
-    background-color: #188181;
-    color: #fff;
+    color: white;
 }
 
 .btn-signup:hover,
-.btn-signup:active {
+.btn-signup:active,
+#buttons-all-about-gamecrit .btn:hover,
+#buttons-all-about-gamecrit .btn:active,
+.submit-btn-comment:hover,
+.submit-btn-comment:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #030c0c;
+    border-color: #030c0c;
 }
 
 .link {
-    color: #23BBBB;
+    color: #c2b329;
     text-decoration: none;
 }
 
@@ -138,11 +162,6 @@ body {
     color: #E84610;
     border: none;
     background: transparent;
-}
-
-.btn-delete {
-    color: #fff;
-    background: #E84610;
 }
 
 .btn-like:hover,
@@ -159,3 +178,122 @@ body {
 .approval {
     color: rgb(222, 146, 168);
 }
+
+#hide-text {
+    display: none;
+}
+/* styling for gamecrit banner */
+
+#gamecrit-explanation {
+    display: flex;
+    width: 100%;
+    max-width: 1250px;
+    height: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 160px;
+    justify-content: space-between;
+    background: url(../images/banner.webp) no-repeat center center/cover;
+    flex-direction: column;
+}
+
+/*
+#all-about-gamecrit {
+
+}
+*/
+
+#all-about-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+    flex-direction: column;
+    color: #d3d3d3;
+    margin-top: 70px;
+    background-color: rgba(0,0,0,0.7)
+}
+
+/*#buttons-all-about-gamecrit, #all-about-header {
+    background-color: rgba(0,0,0,0.5);
+}*/
+#all-about-header p {
+    width: 100%;
+}
+
+#buttons-all-about-gamecrit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5px;
+    gap: 10px;
+    flex-direction: row;
+}
+
+#buttons-all-about-gamecrit .btn, .submit-btn-comment, .sign-in-button, .btn-signup {
+    width: 150px;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #2cff05;
+}
+
+/* media query for tablets and larger screens */
+@media screen and (min-width: 768px){
+    #buttons-all-about-gamecrit .btn, .submit-btn-comment, .sign-in-button, .btn-signup{
+        margin-right: 40px;
+        height:45px;
+        width: 200px;
+    }
+
+    #gamecrit-explanation {
+        width: 80%;
+        height: 590px;
+        margin-bottom: 20px;
+        flex-direction: unset;
+    }
+
+    #all-about-header {
+        margin-top: 20%;
+        width: 80%;
+        align-items: left;
+        text-align: left;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+    #all-about-header p {
+        width: 80%;
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+
+    #buttons-all-about-gamecrit {
+        justify-content: center;
+        flex-direction: column;
+        padding-top: unset;
+    }
+
+}
+
+
+/* Large devices (laptops and desktops, 992px and more)*/
+@media screen and (min-width: 992px){
+    #navbarText {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #hide-text {
+        display: unset;
+    }
+}
+
+

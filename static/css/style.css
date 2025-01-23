@@ -171,14 +171,16 @@ body, .navbar-light {
 
 #gamecrit-explanation {
     display: flex;
-    width: 80%;
-    height: 590px;
+    width: 100%;
+    max-width: 1250px;
+    height: 250px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 350px;
     justify-content: space-between;
     background: url(../images/banner.webp) no-repeat center center/cover;
+    flex-direction: column;
 }
 
 /*
@@ -189,45 +191,86 @@ body, .navbar-light {
 
 #all-about-header {
     display: flex;
-    align-items: left;
-    width: 95%;
+    align-items: center;
+    width: 100%;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding-bottom: 20px;
-    padding-top: 15px;
-    padding-left: 20px;
-    text-align: left;
+    padding: 5px;
+    text-align: center;
     flex-direction: column;
     color: #d3d3d3;
-    margin-top: 130px;
+    margin-top: 70px;
+    background-color: rgba(0,0,0,0.7)
 }
 
-#buttons-all-about-gamecrit, #all-about-header {
+/*#buttons-all-about-gamecrit, #all-about-header {
     background-color: rgba(0,0,0,0.5);
-}
-
+}*/
 #all-about-header p {
-    width: 80%;
+    width: 100%;
 }
 
 #buttons-all-about-gamecrit {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding-top: 5px;
     gap: 10px;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 #buttons-all-about-gamecrit .btn {
-    width: 200px;
-    height: 45px;
+    width: 150px;
+    height: 40px;
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: bolder;
-    margin-right: 40px;
+    text-align: center;
     background-color: #2cff05;
 }
 
+
+/* media query for tablets and larger screens */
+@media screen and (min-width: 768px){
+    #buttons-all-about-gamecrit .btn{
+        margin-right: 40px;
+        height:45px;
+        width: 200px;
+    }
+
+    #gamecrit-explanation {
+        width: 80%;
+        height: 590px;
+        margin-bottom: 20px;
+        flex-direction: unset;
+    }
+
+    #all-about-header {
+        margin-top: 20%;
+        width: 80%;
+        align-items: left;
+        text-align: left;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+    #all-about-header p {
+        width: 80%;
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+
+    #buttons-all-about-gamecrit {
+        justify-content: center;
+        flex-direction: column;
+        padding-top: unset;
+    }
+
+}
+
+
+/* Large devices (laptops and desktops, 992px and more)*/
 @media screen and (min-width: 992px){
     #navbarText {
         display: flex;
@@ -238,3 +281,5 @@ body, .navbar-light {
         display: unset;
     }
 }
+
+

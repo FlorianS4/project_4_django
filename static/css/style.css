@@ -38,6 +38,14 @@ body, .navbar-light {
     background-color: transparent;
 }
 
+.card-title {
+    max-height: 38px;
+}
+
+#image-size-1, #image-size-2 {
+    max-height: 270px;
+}
+
 .image-container {
     position: relative;
 }
@@ -47,7 +55,7 @@ body, .navbar-light {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #c2b329;
 }
 
 .scale {
@@ -177,7 +185,7 @@ body, .navbar-light {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 350px;
+    margin-bottom: 160px;
     justify-content: space-between;
     background: url(../images/banner.webp) no-repeat center center/cover;
     flex-direction: column;

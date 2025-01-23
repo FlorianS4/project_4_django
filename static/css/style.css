@@ -136,8 +136,6 @@ body, .navbar-light, .footer {
     color: white;
 }
 
-
-
 .btn-signup:hover,
 .btn-signup:active,
 #buttons-all-about-gamecrit .btn:hover,
@@ -150,7 +148,7 @@ body, .navbar-light, .footer {
 }
 
 .link {
-    color: #23BBBB;
+    color: #c2b329;
     text-decoration: none;
 }
 
@@ -236,7 +234,7 @@ body, .navbar-light, .footer {
     flex-direction: row;
 }
 
-#buttons-all-about-gamecrit .btn, .submit-btn-comment, .sign-in-button {
+#buttons-all-about-gamecrit .btn, .submit-btn-comment, .sign-in-button, .btn-signup {
     width: 150px;
     height: 40px;
     text-transform: uppercase;
@@ -248,7 +246,7 @@ body, .navbar-light, .footer {
 
 /* media query for tablets and larger screens */
 @media screen and (min-width: 768px){
-    #buttons-all-about-gamecrit .btn, .submit-btn-comment{
+    #buttons-all-about-gamecrit .btn, .submit-btn-comment, .sign-in-button, .btn-signup{
         margin-right: 40px;
         height:45px;
         width: 200px;

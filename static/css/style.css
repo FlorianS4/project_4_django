@@ -136,15 +136,17 @@ body, .navbar-light, .footer {
     color: white;
 }
 
-.btn-signup {
-    background-color: #188181;
-    color: #fff;
-}
+
 
 .btn-signup:hover,
-.btn-signup:active {
+.btn-signup:active,
+#buttons-all-about-gamecrit .btn:hover,
+#buttons-all-about-gamecrit .btn:active,
+.submit-btn-comment:hover,
+.submit-btn-comment:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #030c0c;
+    border-color: #030c0c;
 }
 
 .link {
@@ -234,7 +236,7 @@ body, .navbar-light, .footer {
     flex-direction: row;
 }
 
-#buttons-all-about-gamecrit .btn, .submit-btn-comment {
+#buttons-all-about-gamecrit .btn, .submit-btn-comment, .sign-in-button {
     width: 150px;
     height: 40px;
     text-transform: uppercase;

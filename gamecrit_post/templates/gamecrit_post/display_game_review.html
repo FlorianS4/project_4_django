@@ -6,9 +6,7 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
-                <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ gamecrit_post.post_name }}</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ gamecrit_post.username }} | {{ gamecrit_post.created_on }}</p>
             </div>
         </div>
@@ -23,27 +21,25 @@
 <div class="container">
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
-                <!-- The post content goes inside the card-text. -->
-                <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text">
+            <div class="blog-text">
+                <p class="blog-card-text">
                     {{ gamecrit_post.post_field | safe }}
                 </p>
             </div>
         </div>
     </div>
-    <!--Delete button for Post-->
+    <!--Delete and Edit button for Post-->
     {% if user.is_authenticated and gamecrit_post.username == request.user %}
     <span class="text-center">
-        <a href="{% url 'edit_gamecrit_post' gamecrit_post.id %}" class="btn btn-primary w-25">Edit this post!</a>
+        <a href="{% url 'edit_gamecrit_post' gamecrit_post.id %}" class="btn btn-outline-primary btn-lg">Edit this post!</a>
     </span>
     <span class="text-center">
-        <a href="{% url 'delete_gamecrit_post' gamecrit_post.id %}" class="btn btn-primary w-25">Delete this post!</a>
+        <a href="{% url 'delete_gamecrit_post' gamecrit_post.id %}" class="btn btn-outline-danger btn-lg">Delete this post!</a>
     </span>
     {% endif %}
     <!--Display Like button-->
     <div class="row">
-        <div class="col-1">
+        <div class="col-12">
             {% if user.is_authenticated %}
             <form class="d-inline" action="{% url 'add_like' gamecrit_post.slug %}" method="POST">
                 {% csrf_token %}
@@ -56,16 +52,16 @@
                 {% endif %}
             </form>
             {% else %}
-            <span class="text-secondary"><i class="far fa-heart"></i></span>
+            <span class="text-secondary">
+                <i class="far fa-heart"></i></span>
             {% endif %}
-            <!-- The number of likes goes before the closing strong tag -->
-            <span class="text-secondary">{{ gamecrit_post.number_of_gamecrit_post_blog_likes }} </span>
+            <span class="text-secondary">{{ gamecrit_post.number_of_gamecrit_post_blog_likes }}</span>
         </div>
     </div>
     <!-- Displaying count of comments -->
     <div class="row">
         <div class="col-12">
-            <strong class="text-secondary">
+            <strong class="text-secondary comment-number">
                 <i class="far fa-comments"></i> {{ comment_count }}
             </strong>
         </div>
@@ -95,20 +91,18 @@
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 ">
             <h3>Comments:</h3>
-            <div class="card-body">
-                <!-- We want a for loop inside the empty control tags
-          to iterate through each comment in comments -->
+            <div class="comment-text">
                 {% for comment in comments %}
                 <div class="p-2 comments
           {% if not comment.approved and comment.username == user %}
           faded{% elif not comment.approved %} d-none{% endif %}">
-                    <p class="font-weight-bold">
+                    <p>
                         {{ comment.username }}
-                        <span class="font-weight-normal">
+                        <span>
                             {{ comment.created_on }}
                         </span> wrote:
                     </p>
-                    <div id="comment{{ comment.id }}">
+                    <div class="comment-body" id="comment{{ comment.id }}">
                         {{ comment.comment_field | linebreaks }}
                     </div>
                     {% if not comment.approved and comment.username == user %}
@@ -116,12 +110,13 @@
                         This comment is awaiting approval
                     </p>
                     {% endif %}
+                    <!-- Delete and Edit button for comment author -->
                     {% if user.is_authenticated and comment.username == request.user %}
-                    <button class="btn btn-delete" comment_id="{{ comment.id }}">Delete</button>
-                    <button class="btn btn-edit" comment_id="{{ comment.id }}">Edit</button>
+                    <button class="btn btn-edit btn-outline-primary" comment_id="{{ comment.id }}">Edit</button>
+                    <button class="btn btn-delete btn-outline-danger" comment_id="{{ comment.id }}">Delete</button>                    
                     {% endif %}
+                    <hr>
                 </div>
-                <!-- Our for loop ends here -->
                 {% endfor %}
             </div>
         </div>
@@ -134,7 +129,7 @@
                 <form id="commentForm" method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                    <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+                    <button id="submitButton" type="submit" class="submit-btn-comment btn-lg">Submit</button>
                 </form>
                 {% else %}
                 <p>Log in to leave a comment</p>
@@ -158,7 +153,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <a id="deleteConfirm" href="#" class="btn
-          btn-danger">Delete</a>
+                btn-outline-danger">Delete</a>
             </div>
         </div>
     </div>

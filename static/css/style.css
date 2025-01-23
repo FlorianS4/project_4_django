@@ -92,18 +92,27 @@ body, .navbar-light, .footer {
     margin-top: unset;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+.blog-text {
+    background-color: lightgrey;
+}
+
+.blog-card-text {
+    font-size: 1.05rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Comments */
+.comment-number {
+    padding-left: 5px;
+}
+
+.comment-text {
+    background-color: lightgrey;
+}
+
+.comment-body {
+    font-size: larger;
 }
 
 .post-link {
@@ -127,8 +136,7 @@ body, .navbar-light, .footer {
     color: white;
 }
 
-.btn-signup,
-.btn-edit {
+.btn-signup {
     background-color: #188181;
     color: #fff;
 }
@@ -156,11 +164,6 @@ body, .navbar-light, .footer {
     background: transparent;
 }
 
-.btn-delete {
-    color: #fff;
-    background: #E84610;
-}
-
 .btn-like:hover,
 .btn-like:active {
     color: #E84610;
@@ -179,7 +182,7 @@ body, .navbar-light, .footer {
 #hide-text {
     display: none;
 }
-/* styling for gamecrit explanation */
+/* styling for gamecrit banner */
 
 #gamecrit-explanation {
     display: flex;
@@ -231,7 +234,7 @@ body, .navbar-light, .footer {
     flex-direction: row;
 }
 
-#buttons-all-about-gamecrit .btn {
+#buttons-all-about-gamecrit .btn, .submit-btn-comment {
     width: 150px;
     height: 40px;
     text-transform: uppercase;
@@ -243,7 +246,7 @@ body, .navbar-light, .footer {
 
 /* media query for tablets and larger screens */
 @media screen and (min-width: 768px){
-    #buttons-all-about-gamecrit .btn{
+    #buttons-all-about-gamecrit .btn, .submit-btn-comment{
         margin-right: 40px;
         height:45px;
         width: 200px;

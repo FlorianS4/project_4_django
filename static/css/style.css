@@ -1,4 +1,4 @@
-body, .navbar-light {
+body, .navbar-light, .footer {
     background-color: #c2b329;
 }
 
@@ -74,19 +74,22 @@ body, .navbar-light {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    max-height: 160px;
     width: 100%;
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #c2b329;
     color: white;
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.masthead-image {
-    position: relative;
-    overflow: hidden;
+.masthead-text h1 {
+    margin-top: unset;
 }
 
 .masthead-image:after {
@@ -116,11 +119,12 @@ body, .navbar-light {
 .post-title {
     margin-top: 10%;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: white;
 }
 
 .btn-signup,
@@ -236,7 +240,6 @@ body, .navbar-light {
     text-align: center;
     background-color: #2cff05;
 }
-
 
 /* media query for tablets and larger screens */
 @media screen and (min-width: 768px){

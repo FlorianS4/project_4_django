@@ -11,14 +11,11 @@
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ gamecrit_post.username }} | {{ gamecrit_post.created_on }}</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                <h2>Image here</h2>
-            </div>
         </div>
     </div>
 </div>
 <div class="container">
-    <iframe width="800" height="450"
+    <iframe class="w-100 w-lg-900" height="550"
         src="https://www.youtube.com/embed/{{ gamecrit_post.youtube_link|slice:'-11:' }}?autoplay=1&mute=1"
         frameborder="0" allowfullscreen>
         </iframe>

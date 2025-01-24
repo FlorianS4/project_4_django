@@ -5,20 +5,19 @@
 {% block content %}
 <div class="container mt-5">
     <div class="row">
-        <div class="col-12 col-md-8">
-            <h2>Gamecrit Contact</h2>
+        <div class="h1-styling">
+            <h2 class="h1-styling-text"><span class="text-uppercase">Gamecrit</span> Contact</h2>
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="col-12 col-md-6 my-5">
-            <h2>Test TEst Test </h2>
-            <p>A Form should be underneath this p line, lets hope it works!</p>
+            <p>Hello!<br>You want to get in contact with us?<br>Nothing is easier than that. Just fill out this form and we will reach out to you in the next 2 buisness days!</p>
 
             <!--Test Form is underneath this-->
             <form method="post">
                 {{ contact_form | crispy }}
                 {% csrf_token %}
-                <button class="btn btn-secondary" type="submit">Submit</button>
+                <button class="btn submit-btn-comment" type="submit">Submit</button>
             </form>
         </div>
     </div>

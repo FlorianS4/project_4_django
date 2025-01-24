@@ -6,9 +6,10 @@
 <!-- index.html content starts here -->
 <div class="container-fluid">
     <div class="row">
-
-
         <!-- Blog Entries Column -->
+        <div class="h1-styling">
+            <h1 class="h1-styling-text">Your saved <span class="text-uppercase">Gamecrit</span> Posts</h1>
+        </div>
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
@@ -23,7 +24,8 @@
                                 <img class="card-img-top" id="image-size-1" src="{% static 'images/default.webp' %}"
                                     alt="placeholder image">
                                 {% else %}
-                                <img class="card-img-top" id="image-size-2" src="{{ post.post_image.url }}" alt="{{ post.post_name }}">
+                                <img class="card-img-top" id="image-size-2" src="{{ post.post_image.url }}"
+                                    alt="{{ post.post_name }}">
                                 {% endif %}
                             </div>
                             <div class="image-container">

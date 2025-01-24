@@ -244,6 +244,22 @@ body, .navbar-light, .footer {
     background-color: #2cff05;
 }
 
+/* Styling for Bookmark page */
+
+.h1-styling {
+    display: flex;
+    margin-top: 3%;
+    width: 100%;
+    justify-content: center;
+}
+
+.h1-styling-text {
+    width: 70%;
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* media query for tablets and larger screens */
 @media screen and (min-width: 768px){
     #buttons-all-about-gamecrit .btn, .submit-btn-comment, .sign-in-button, .btn-signup{

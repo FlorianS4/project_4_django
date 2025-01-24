@@ -5,7 +5,9 @@
 {% load crispy_forms_tags %}
 <!--Create GameCrit Form-->
 <div class="container">
-    <h1>Write your own review here!</h1>
+    <div class="h1-styling">
+        <h1 class="h1-styling-text">Write test your own review here!</h1>
+    </div>
     <br>
     <div class="row justify-content-center ">
         {% if user.is_authenticated %}
@@ -13,7 +15,7 @@
             <form method="post" enctype="multipart/form-data">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <button type="submit" class="btn btn-outline-dark">Post your review</button>
+                <button type="submit" class="btn submit-btn-comment">Upload</button>
             </form>
         </div>
         {% endif %}

@@ -25,11 +25,11 @@
                                     alt="placeholder image">
                                 {% else %}
                                 <img class="card-img-top" id="image-size-2" src="{{ post.post_image.url }}"
-                                    alt="{{ post.post_name }}">
+                                    alt="{{ post.alt_image }}">
                                 {% endif %}
                             </div>
                             <div class="image-container">
-                                <div class="image-flash">
+                                <div class="author-display">
                                     <p class="author">Author: {{ post.username }}</p>
                                 </div>
                             </div>

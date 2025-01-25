@@ -8,26 +8,63 @@ body, .navbar-light, .footer {
     font-weight: 700;
     color: #fff;
 }
+/* Navbar styling */
 
-.red-crit {
+.red-header {
     color: rgb(145, 12, 7);
 }
 
-.red-o {
-    color: #E84610;
+/* styling for gamecrit banner */
+
+#gamecrit-explanation {
+    display: flex;
+    width: 100%;
+    max-width: 1250px;
+    height: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 160px;
+    justify-content: space-between;
+    background: url(../images/banner.webp) no-repeat center center/cover;
+    flex-direction: column;
 }
 
-.thin {
-    font-weight: 300;
+#all-about-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+    flex-direction: column;
+    color: #d3d3d3;
+    margin-top: 70px;
+    background-color: rgba(0,0,0,0.7)
 }
 
-.light-bg {
-    background-color: #fff;
+#all-about-header p {
+    width: 100%;
 }
 
-.dark-bg {
-    background-color: #445261;
+/* Styling for h1 on different pages */
+
+.h1-styling {
+    display: flex;
+    margin-top: 3%;
+    width: 100%;
+    justify-content: center;
 }
+
+.h1-styling-text {
+    width: 70%;
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* basic styling I took from Code institute, and adapted a litte */
 
 .main-bg {
     background-color: #F9FAFC;
@@ -40,33 +77,6 @@ body, .navbar-light, .footer {
 
 .card-title {
     max-height: 38px;
-}
-
-#image-size-1, #image-size-2 {
-    max-height: 270px;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #c2b329;
-}
-
-.scale {
-    width: 100%;
-    height: auto;
-}
-
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
 }
 
 .masthead {
@@ -102,6 +112,32 @@ body, .navbar-light, .footer {
     padding-right: 5px;
 }
 
+/* image sizing */
+
+.image-container {
+    position: relative;
+}
+
+#image-size-1, #image-size-2 {
+    max-height: 270px;
+}
+
+/* author display */
+
+.author-display {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #c2b329;
+}
+
+.author {
+    color: white;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
 /* Comments */
 .comment-number {
     padding-left: 5px;
@@ -115,6 +151,8 @@ body, .navbar-light, .footer {
     font-size: larger;
 }
 
+/* post link */
+
 .post-link {
     text-decoration: none;
     color: #445261;
@@ -122,8 +160,10 @@ body, .navbar-light, .footer {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #2cff05;
 }
+
+/* post title styling */
 
 .post-title {
     margin-top: 10%;
@@ -134,6 +174,18 @@ body, .navbar-light, .footer {
 .post-subtitle {
     margin-left: 5%;
     color: white;
+}
+
+/*Button styling */
+
+#buttons-all-about-gamecrit .btn, .submit-btn-comment, .sign-in-button, .btn-signup {
+    width: 150px;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #2cff05;
 }
 
 .btn-signup:hover,
@@ -147,15 +199,13 @@ body, .navbar-light, .footer {
     border-color: #030c0c;
 }
 
-.link {
-    color: #c2b329;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
+#buttons-all-about-gamecrit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5px;
+    gap: 10px;
+    flex-direction: row;
 }
 
 .btn-like {
@@ -171,6 +221,19 @@ body, .navbar-light, .footer {
     border: none;
 }
 
+/* internal link styling */
+
+.link {
+    color: #c2b329;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
+
 .faded {
     color: rgb(172, 175, 175);
 }
@@ -182,85 +245,9 @@ body, .navbar-light, .footer {
 #hide-text {
     display: none;
 }
-/* styling for gamecrit banner */
 
-#gamecrit-explanation {
-    display: flex;
-    width: 100%;
-    max-width: 1250px;
-    height: 250px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 160px;
-    justify-content: space-between;
-    background: url(../images/banner.webp) no-repeat center center/cover;
-    flex-direction: column;
-}
+/* Styling for delete_game_post.html  */
 
-/*
-#all-about-gamecrit {
-
-}
-*/
-
-#all-about-header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 5px;
-    text-align: center;
-    flex-direction: column;
-    color: #d3d3d3;
-    margin-top: 70px;
-    background-color: rgba(0,0,0,0.7)
-}
-
-/*#buttons-all-about-gamecrit, #all-about-header {
-    background-color: rgba(0,0,0,0.5);
-}*/
-#all-about-header p {
-    width: 100%;
-}
-
-#buttons-all-about-gamecrit {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 5px;
-    gap: 10px;
-    flex-direction: row;
-}
-
-#buttons-all-about-gamecrit .btn, .submit-btn-comment, .sign-in-button, .btn-signup {
-    width: 150px;
-    height: 40px;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    text-align: center;
-    background-color: #2cff05;
-}
-
-/* Styling for h1 on different pages */
-
-.h1-styling {
-    display: flex;
-    margin-top: 3%;
-    width: 100%;
-    justify-content: center;
-}
-
-.h1-styling-text {
-    width: 70%;
-    text-align: center !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Styling for delete */
 .center-delete {
     display: flex;
     justify-content: center;

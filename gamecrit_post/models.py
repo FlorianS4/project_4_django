@@ -6,7 +6,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
 class Post(models.Model):
-    post_name = models.CharField(max_length=100, unique=True)
+    post_name = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, default="", null=False)
     username = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="gamecrit_post_blog"
@@ -20,6 +20,7 @@ class Post(models.Model):
     gamecrit_post_blog_likes = models.ManyToManyField(User, related_name="gamecrit_post_like", blank=True)
     bookmarks = models.ManyToManyField(User, related_name="bookmark", default=None, blank=True)
     post_image = CloudinaryField('image,', default='placeholder')
+    alt_image = models.CharField(max_length=100, default="", null=False, blank=False)
 
     class Meta:
         ordering = ["-created_on"]

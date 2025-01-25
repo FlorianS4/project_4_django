@@ -13,7 +13,7 @@
     <div class="row justify-content-center ">
         {% if user.is_authenticated %}
         <div class="col-11 col-md-8 col-lg-6 mt-3">
-            <form method="post" enctype="multipart/form-data">
+            <form method="post" enctype="multipart/form-data" class="center-delete">
                 {% csrf_token %}
                 <p>Are you sure you want to delete "{{object.post_name}}"?</p>
                 <input type="submit" value="Confirm" class="btn submit-btn-comment">

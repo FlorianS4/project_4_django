@@ -4,8 +4,10 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-# Create your models here.
 class Post(models.Model):
+    """
+    Defines Post Model and it fields for further use
+    """
     post_name = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, default="", null=False)
     username = models.ForeignKey(
@@ -29,9 +31,15 @@ class Post(models.Model):
         return f"{self.post_name} | written by {self.username}"
 
     def number_of_gamecrit_post_blog_likes(self):
+        """
+        returns the number of likes a post got
+        """
         return self.gamecrit_post_blog_likes.count()
 
 class Comment(models.Model):
+    """
+    Defines Comment Model and it fields for further use
+    """
     post_id = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name="comments")
     username = models.ForeignKey(

@@ -67,18 +67,8 @@ class EditGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateVi
 
 def display_game_review(request, slug):
     """
-    Display an individual :model:`blog.Post`.
-
-    **Context**
-
-    ``post``
-        An instance of :model:`blog.Post`.
-
-    **Template:**
-
-    :template:`blog/post_detail.html`
+    displays one gamecrit post and add ability to comment on it, as a logged in user    
     """
-
     queryset = Post.objects.filter(status=1)
     gamecrit_post = get_object_or_404(queryset, slug=slug)
     comments = gamecrit_post.comments.all().order_by("-created_on")

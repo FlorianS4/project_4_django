@@ -14,6 +14,8 @@
     - [Imagery](#imagery)
     - [Color Scheme](#color-scheme)
 - [Wireframes](#wireframes)
+- [Relationship Models](relationship-models)
+- [Agil Methology](#agil-methology)
 - [Features](#features)
     - [Common Features](#common-features)
       - [Navbar](#navbar)
@@ -98,6 +100,10 @@ All Images were taken from different websites. I give credit to them in the [cre
 <summary>Mobile Wireframe</summary>
 
 </details>
+
+## Relationship Models
+
+## Agil Methology
 
 ## Features
 ### Common Features

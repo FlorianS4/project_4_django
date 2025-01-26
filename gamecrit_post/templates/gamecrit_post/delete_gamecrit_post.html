@@ -16,7 +16,7 @@
             <form method="post" enctype="multipart/form-data" class="center-delete">
                 {% csrf_token %}
                 <p>Are you sure you want to delete "{{object.post_name}}"?</p>
-                <input type="submit" value="Confirm" class="btn submit-btn-comment">
+                <input type="submit" value="Confirm" class="btn submit-btn-comment" aria-label="delete post button">
             </form>
         </div>
         {% endif %}

@@ -15,7 +15,7 @@
             <form method="post" enctype="multipart/form-data">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <button type="submit" class="btn submit-btn-comment">Upload</button>
+                <button type="submit" class="btn submit-btn-comment" aria-label="Upload">Upload</button>
             </form>
         </div>
         {% endif %}

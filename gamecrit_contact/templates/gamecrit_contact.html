@@ -17,7 +17,7 @@
             <form method="post">
                 {{ contact_form | crispy }}
                 {% csrf_token %}
-                <button class="btn submit-btn-comment" type="submit">Submit</button>
+                <button class="btn submit-btn-comment" type="submit" aria-label="submit button for contact form">Submit</button>
             </form>
         </div>
     </div>

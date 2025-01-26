@@ -34,10 +34,10 @@
     <!--Delete and Edit button for Post-->
     {% if user.is_authenticated and gamecrit_post.username == request.user %}
     <span class="text-center">
-        <a href="{% url 'edit_gamecrit_post' gamecrit_post.id %}" class="btn btn-outline-primary btn-lg">Edit this post!</a>
+        <a href="{% url 'edit_gamecrit_post' gamecrit_post.id %}" class="btn btn-outline-primary btn-lg" aria-label="edit button for posts if user is the author">Edit this post!</a>
     </span>
     <span class="text-center">
-        <a href="{% url 'delete_gamecrit_post' gamecrit_post.id %}" class="btn btn-outline-danger btn-lg">Delete this post!</a>
+        <a href="{% url 'delete_gamecrit_post' gamecrit_post.id %}" class="btn btn-outline-danger btn-lg" aria-label="delete button for posts if user is the author">Delete this post!</a>
     </span>
     {% endif %}
     <!--Display Like button-->
@@ -115,8 +115,8 @@
                     {% endif %}
                     <!-- Delete and Edit button for comment author -->
                     {% if user.is_authenticated and comment.username == request.user %}
-                    <button class="btn btn-edit btn-outline-primary" comment_id="{{ comment.id }}">Edit</button>
-                    <button class="btn btn-delete btn-outline-danger" comment_id="{{ comment.id }}">Delete</button>                    
+                    <button class="btn btn-edit btn-outline-primary" comment_id="{{ comment.id }}" aria-label="edit button for comments if user is the author">Edit</button>
+                    <button class="btn btn-delete btn-outline-danger" comment_id="{{ comment.id }}" aria-label="delete button for comments if user is the author">Delete</button>                    
                     {% endif %}
                     <hr>
                 </div>
@@ -132,10 +132,10 @@
                 <form id="commentForm" method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                    <button id="submitButton" type="submit" class="submit-btn-comment btn-lg">Submit</button>
+                    <button id="submitButton" type="submit" class="submit-btn-comment btn-lg" aria-label="submit new comment button">Submit</button>
                 </form>
                 {% else %}
-                <p><a class="link" href="{{ login_url }}">Log in</a> to leave a comment</p>
+                <p><a class="link" href="{{ login_url }}" aria-label="link for users who are not logged in">Log in</a> to leave a comment</p>
                 {% endif %}
             </div>
         </div>
@@ -154,9 +154,9 @@
                 This action cannot be undone.
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
                 <a id="deleteConfirm" href="#" class="btn
-                btn-outline-danger">Delete</a>
+                btn-outline-danger" aria-label="Delete">Delete</a>
             </div>
         </div>
     </div>

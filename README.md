@@ -131,11 +131,42 @@ Register Page:
 
 ![Register Page](/docs/wireframes-images/register-page-desktop.png)
 
+404 Page:
+
+![404 Page](/docs/wireframes-images/404-page-desktop.png)
+
 </details>
 
 <details>
 
 <summary>Mobile Wireframe</summary>
+Main Page:
+
+![Wireframe Main Page mobile](/docs/wireframes-images/home-page-mobile.png)
+
+Gamecrit Contact Page:
+
+![Gamecrit Contact Page mobile](/docs/wireframes-images/contact-page-mobile.png)
+
+Create your own review Page:
+
+![Create review Page mobile](/docs/wireframes-images/create-post-mobile.png)
+
+Bookmark Page:
+
+![Bookmark Page mobile](/docs/wireframes-images/bookmark-page-mobile.png)
+
+Login Page:
+
+![Login Page mobile](/docs/wireframes-images/login-page-mobile.png)
+
+Register Page:
+
+![Register Page mobile](/docs/wireframes-images/register-page-mobile.png)
+
+404 Page:
+
+![404 Page mobile](/docs/wireframes-images/404-page-mobile.png)
 
 </details>
 

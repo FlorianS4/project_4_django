@@ -107,7 +107,29 @@ All Images were taken from different websites. I give credit to them in the [cre
 <details>
 
 <summary>Desktop Wireframe</summary>
+Main Page:
 
+![Wireframe Main Page](/docs/wireframes-images/home-page-desktop.png)
+
+Gamecrit Contact Page:
+
+![Gamecrit Contact Page](/docs/wireframes-images/contact-page-desktop.png)
+
+Create your own review Page:
+
+![Create review Page](/docs/wireframes-images/create-post-desktop.png)
+
+Bookmark Page:
+
+![Bookmark Page](/docs/wireframes-images/bookmark-page-desktop.png)
+
+Login Page:
+
+![Login Page](/docs/wireframes-images/login-page-desktop.png)
+
+Register Page:
+
+![Register Page](/docs/wireframes-images/register-page-desktop.png)
 
 </details>
 

@@ -76,26 +76,32 @@
 ## Design
 ### Typography
 
-[Google Fonts](https://fonts.google.com/) was used for the following fonts:
-- ![Rajdhani font image](/assets/docs/readme-images/google-font-for-h.png)
+[Google Fonts](https://fonts.google.com/) was used for the following font:
+- ![Lato font image]()
 
-    [Rajdhani](https://fonts.google.com/specimen/Rajdhani?preview.text=Halo%20Memory%20Game&query=Rajdhani) was chosen for my headings.
-- ![Inconsolata font image](/assets/docs/readme-images/google-font-for-body.png)
+    [Lato](https://fonts.google.com/specimen/Lato?preview.text=Gamecrit)
+- Lato font was picked because I like the look of it for the Gamecrit header in the Navbar.
 
-    [Inconsolata](https://fonts.google.com/specimen/Inconsolata?preview.text=Halo%20Memory%20Game&query=Inconsolata) was chosen for my body.
-- I picked both those fonts, because they reminded me of the fonts used in Halo.
+- ![Stencil font image]()
+
+    [Stencil](https://fonts.google.com/specimen/Stardos+Stencil?preview.text=GAMECRIT&query=Stencil)
+- Stencil was picked as font for my Banner heading.
+
 - Sans Serif was chosen as a backup font, in case the main font is not imported into the website, or there is a problem with the browser.
 
 ### Imagery
 
-All Images were taken from different websites. I give credit to them in the [credits](#credits) section. The images selected show different characters from the Halo Universe.
+All Images were taken from different websites. I give credit to them in the [credits](#credits) section. I only needed two pictures, one as a default picture if people forgot or didn't want to include a picture for their blog post. The other picture is for the Gamecrit Banner.
 
 ### Color Scheme
 
-* I have used `#000000` as the primary color for text used on the site.
-* I have used `#8EA72F` as the background color.
-* I have used `#9B9B9B` as the placeholder text color for the input field.
-* I have used `#374E95` as the color for the hover functions on the buttons.
+* I have used `#FFFFFF` and `#000000` as the primary color for text used on the site.
+* I have used `#910C07` as the text color for the "crit" in the navbar header.
+* I have used `#C2B329` as the background color for the navbar and the author display.
+* I have used `#D3D3D3` as the background color for the blog text field and for the comment section.
+* I have used `#2CFF05` as the color for for the buttons on my site.
+
+![Gamecrit Site color palette]()
 
 ## Wireframes
 <details>

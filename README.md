@@ -50,18 +50,28 @@
 
 
 ## Site Owner Goals
-- 
+- to provide the user with a blog site about video games.
+- to provide the user with the ability to create their post about a video game with their opinion.
+- to provide the user with the ability to leave a comment underneath a blog post.
+- to provide the user with the ability to edit or delete the post or a comment they created.
+- to provide the user with the ability to like a post.
+- to provide the user with a bookmark section, where they can see their bookmarked posts.
+- to provide the user with a possibility to get in contact with the side owner.
 
 ## User Experience
 ### User Stories
 #### First Time User
-- 
+- I want to read reviews about games I'm interested in.
+- I want to read what other people think about my favorite game.
+- I'm looking for a new game to play and hope to find inspiration on this site.
 
 #### Returning User
-- 
+- I want to write my own reviews and provide my own thoughts about a game i like.
+- I want to like good reviews.
+- I want to wirte comments with my own thoughts about a game that somebody wrote a blog post for.
 
 #### Frequent User
-- 
+- I want to bookmark good reviews so I can come back to the post after I finished the game.
 
 ## Design
 ### Typography

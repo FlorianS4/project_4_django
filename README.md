@@ -77,12 +77,12 @@
 ### Typography
 
 [Google Fonts](https://fonts.google.com/) was used for the following font:
-- ![Lato font image]()
+- ![Lato font image](/docs/readme-images/font-image-navbar.png)
 
     [Lato](https://fonts.google.com/specimen/Lato?preview.text=Gamecrit)
 - Lato font was picked because I like the look of it for the Gamecrit header in the Navbar.
 
-- ![Stencil font image]()
+- ![Stencil font image](/docs/readme-images/font-image-banner.png)
 
     [Stencil](https://fonts.google.com/specimen/Stardos+Stencil?preview.text=GAMECRIT&query=Stencil)
 - Stencil was picked as font for my Banner heading.
@@ -101,7 +101,7 @@ All Images were taken from different websites. I give credit to them in the [cre
 * I have used `#D3D3D3` as the background color for the blog text field and for the comment section.
 * I have used `#2CFF05` as the color for for the buttons on my site.
 
-![Gamecrit Site color palette]()
+![Gamecrit Site color palette](/docs/readme-images/color-palette-project-4.png)
 
 ## Wireframes
 <details>
@@ -125,50 +125,62 @@ All Images were taken from different websites. I give credit to them in the [cre
 ### Common Features
 #### Navbar
 
-![Navbar desktop login view]()
+![Navbar desktop login view](/docs/readme-images/navbar-login-desktop.png)
 
-![Navbar desktop logged in view]()
+![Navbar desktop logged in view](/docs/readme-images/navbar-loggedin-desktop.png)
 
 - The navbar gives the user options depending if they are already logged in or not.
 
-![Navbar mobile view]()
+![Navbar mobile view](/docs/readme-images/navbar-mobile.png)
 
 - The navbar on mobile has a drop down menu.
 
 #### Footer
 
-![Footer desktop view]()
+![Footer desktop view](/docs/readme-images/footer-desktop.png)
 
-![Footer mobile view]()
+![Footer mobile view](/docs/readme-images/footer-mobile.png)
 
 - The footer has a link to my GitHub aswell as links to popular social media sides.
 
 ### Main Page
 #### Gamecrit Banner
  
-![Banner desktop login view]()
-![Banner desktop logged in view]()
+![Banner desktop login view](/docs/readme-images/banner-desktop-login.png)
+![Banner desktop logged in view](/docs/readme-images/banner-desktop-loggedin.png)
 
 - In the banner the user has options depending if they are looged in or not.
 - The same options exists on mobile.
 
-![Banner mobile view]()
+![Banner mobile view](/docs/readme-images/banner-mobile-view.png)
 
 #### Gamecrit Post Cards
 
-![Gamecrit post cards desktop view]()
-![Gamecrit post cards mobile view]()
+![Gamecrit post cards desktop view](/docs/readme-images/desktop-blog-cards-view.png)
+
+![Gamecrit post cards mobile view](/docs/readme-images/mobile-blog-cards-view.png)
 
 - The Site displays the written blogs with a picture, if the user added one, otherwise it picks the default picture.
-- The author and the date when the blog was created is also displayed.
+- The author and the date when the blog post was created is also displayed.
 
 #### Pagination
 
-- 
+![Pagination](/docs/readme-images/pagination.png)
 
 ### Display Game Review Page
 
--
+![Game Review section](/docs/readme-images/blog-post-video-and-blog-section.png)
+
+- In the top part of the Game Review the user can see the trailer and the review for the game.
+
+![Edit and delete buttons for author](/docs/readme-images/edit-and-delete-button-for-post-author.png)
+
+- The author of the post also has the option to edit or delete the post.
+
+![Game Like and Comment section](/docs/readme-images/blog-post-like-comment-section.png)
+
+- In the bottom part of the Game Review the user can like the post, see how many comments there are and read and leave their own comment.
+- Users can edit or delete their own comments.
 
 ### Add Gamecrit Post Page
 

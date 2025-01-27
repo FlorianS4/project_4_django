@@ -125,20 +125,42 @@ All Images were taken from different websites. I give credit to them in the [cre
 ### Common Features
 #### Navbar
 
-- 
+![Navbar desktop login view]()
+
+![Navbar desktop logged in view]()
+
+- The navbar gives the user options depending if they are already logged in or not.
+
+![Navbar mobile view]()
+
+- The navbar on mobile has a drop down menu.
 
 #### Footer
 
-- 
+![Footer desktop view]()
+
+![Footer mobile view]()
+
+- The footer has a link to my GitHub aswell as links to popular social media sides.
 
 ### Main Page
 #### Gamecrit Banner
  
-- 
+![Banner desktop login view]()
+![Banner desktop logged in view]()
+
+- In the banner the user has options depending if they are looged in or not.
+- The same options exists on mobile.
+
+![Banner mobile view]()
 
 #### Gamecrit Post Cards
 
-- 
+![Gamecrit post cards desktop view]()
+![Gamecrit post cards mobile view]()
+
+- The Site displays the written blogs with a picture, if the user added one, otherwise it picks the default picture.
+- The author and the date when the blog was created is also displayed.
 
 #### Pagination
 
@@ -181,7 +203,7 @@ All Images were taken from different websites. I give credit to them in the [cre
 - 
 
 ### 404 Page
-![404 Page](/assets/docs/readme-images/404-page.png)
+![404 Page]()
 - When an error occurs or a wrong input is given to the url the 404-page will show up with the information on how to be redirected to the landing page.
 
 ## Testing

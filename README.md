@@ -37,7 +37,7 @@
 - [Testing](#testing)
 - [Technologies Used](#technologies-used)
     - [Languages](#languages)
-    - [Programs Used - Frameworks - Libraries](#programs-used---frameworks---libraries)
+    - [Programs Used - Frameworks - Libraries - Databases](#programs-used---frameworks---libraries---databases)
 - [Deployment](#deployment)
     - [Heroku Deployment](#heroku-deployment)
     - [Running the project locally](#running-the-project-locally)
@@ -299,11 +299,10 @@ See the testing results in the [TESTING.md](TESTING.md) file.
 ### Languages
 HTML, CSS, JavaScript, Python
 
-### Programs Used - Frameworks - Libraries
+### Programs Used - Frameworks - Libraries - Databases
 - [Google Fonts](https://fonts.google.com/) - to import  fonts used on website.
 - [FontAwesome](https://fontawesome.com/) - for footer's and navbar's icon.
 - [Google Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)- for troubleshooting, debugging, inspecting page's elements, testing responsiveness and styling elements.
-- [Favicon.cc](https://www.favicon.cc/) - for website's favicon.
 - [Gitpod](https://gitpod.io/) - IDE to develop the website.
 - [GitHub](https://GitHub.com/) - for version control and hosting.
 - [Balsamiq](https://balsamiq.com/wireframes/)- to create wireframes.
@@ -317,9 +316,26 @@ HTML, CSS, JavaScript, Python
 - [JShint JavaScript Validator](https://jshint.com/) to validate JS code.
 - [TinyPNG](https://tinypng.com/) - to compress images to reduce file size without a reduction in quality.
 - [Sweetalert2](https://sweetalert2.github.io/) - to make the alerts look better.
+- [Django](https://www.djangoproject.com/) - used for the project's web framework. Is a Python framework.
+- [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction//) - used as a CSS framework.
+- [Cloudinary](https://cloudinary.com/) - online static file storage used for uploaded pictures.
+- [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/) - Postgres database.
+
 
 
 ## Deployment
+
+How to setup your PostgreSQL database:
+- got to [CI Database Maker](https://dbs.ci-dbs.net/)
+- input your LMS email address
+- create your PostgreSQL database
+- press on Info and copy the Database URL to your env.py file.
+
+How to setup your Cloudinary database.
+- Go to [Cloudinary](https://cloudinary.com/) and sing up for free.
+- Go to your cloudinary dashboard and copy your API key.
+- Add the cloudinary API key to your env.py file. 
+
 This site was deployed to GitHub pages.
 Instructions:
 

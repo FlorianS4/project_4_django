@@ -39,7 +39,9 @@
     - [Languages](#languages)
     - [Programs Used - Frameworks - Libraries](#programs-used---frameworks---libraries)
 - [Deployment](#deployment)
+    - [Heroku Deployment](#heroku-deployment)
     - [Running the project locally](#running-the-project-locally)
+    - [Heroku set up](#heroku-set-up)
 - [Credits](#credits)
     - [Content](#content)
     - [Resources Used](#resources-used)
@@ -295,7 +297,7 @@ See the testing results in the [TESTING.md](TESTING.md) file.
 
 ## Technologies Used
 ### Languages
-HTML, CSS, JavaScript
+HTML, CSS, JavaScript, Python
 
 ### Programs Used - Frameworks - Libraries
 - [Google Fonts](https://fonts.google.com/) - to import  fonts used on website.
@@ -318,23 +320,52 @@ HTML, CSS, JavaScript
 
 
 ## Deployment
-This site was deployed to GitHub pages. Instructions:
+This site was deployed to GitHub pages.
+Instructions:
 
 - Login to Github.
-- Go to the GitHub repository: FlorianS4/Project-2-Memory-Game-JS, navigate to the Settings tab.
+- Go to the GitHub repository: FlorianS4/Project_4_django, navigate to the Settings tab.
 - Select the Pages tab on the menu on the left side.
 - Under Source, choose main from the Branch dropdown menu. Save it.
 - The page will refresh itself and the website is now deployed with a text indicating such.
 
+### Heroku Deployment
+
+- Log into your [Heroku](https://www.heroku.com/) account or create an account.
+- Select the New button on the right at the top and select "Create New App".
+- Enter a application name.
+- Select a region.
+- Click "Create App".
+
+### Heroku set up
+
+- In your GitPod workspace create an env.py file and add it to .gitignore.
+- Add your SECRET_KEY value and the DATABASE_URL to the env.py file.
+- Add your CLOUDINARY_URL to the env.py file if you use cloudinary.
+- In the settings.py file import the env.py file and add the SECRET_KEY and DATABASE_URL file paths.
+- Add cloudinary to the INSTALLED_APPS and to the static files in the settings.py file.
+- Add TEMPLATES_DIR in settings.py file and change the templates directory to TEMPLATES_DIR.
+- Add these Config Vars in Heroku:
+    - `CLOUDINARY_URL` (Your Cloudinary API key)
+    - `DATABASE_URL` (Your Postgres SQL API key)
+    - `SECRET_KEY` (Your secret key)
+- Additionla Heroku Files:
+    - Requirements.txt file
+    - Create Procfile via gunicorn
+
+        ```python
+        web: gunicorn codestar.wsgi
+        ```
+
 ### Running the project locally
 How to Fork:
 - Login to Github
-- Go to the GitHub repository: Project-2-Memory-Game-JS
+- Go to the GitHub repository: Project_4_django
 - Select the Fork button on the right at the top
 
 How to clone:
 - Login to Github
-- Go to the GitHub repository: Project-2-Memory-Game-JS
+- Go to the GitHub repository: Project_4_django
 - Select the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 - Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 - Type 'git clone' into the terminal and then paste the link you copied in step 3. and enter.

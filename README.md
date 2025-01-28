@@ -237,38 +237,57 @@ Register Page:
 
 ### Add Gamecrit Post Page
 
-- 
+![Add Gamecrit Blog Post Page](/docs/readme-images/add-gamecrit-blog-post.png)
+
+- The user can add his own post on this side.
+- The title, text about the game and a video link are mandatory, the picture is not.
+- If the user chooses to not upload a picture, the site will automaticly pick the default picture.
+- After uploading the post, the superuser has to verify the post and set it to public, so other people can see it.
 
 ### Edit Gamecrit Post Page
 
-- 
+![Edit Gamecrit Blog Post Page](/docs/readme-images/edit-gamecrit-blog-post.png)
+
+- On the edit page the author of the post can edit the post.
 
 ### Delete Gamecrit Post Page
 
-- 
+![Delete Gamecrit Blog Post Page](/docs/readme-images/delete-gamecrit-blog-post.png)
+
+- On the delete page the author of the post can delete the post.
 
 ### Gamecrit Contact Page
 
-- 
+![Gamecrit Contact Page](/docs/readme-images/gamecrit-contact-page.png)
+
+- On the gamecrit contact page a user can get in contact with the gamecrit team.
 
 ### Bookmark Page
 
-- 
+![Gamecrit Bookmark Page](/docs/readme-images/gamecrit-bookmark-page.png)
+
+- On the bookmark page the user can see his bookmarked blog post.
 
 ### Signup Page
 
-- 
+![Signup Page](/docs/readme-images/sign-up-page.png)
+
+- A standard sign up page with validation.
 
 ### Login Page
 
-- 
+![Login Page](/docs/readme-images/sign-in-page.png)
+
+- A standard login page.
 
 ### Logout Page
 
-- 
+![Logout Page](/docs/readme-images/logout-page.png)
+
+- A standard logout page.
 
 ### 404 Page
-![404 Page]()
+![404 Page](/docs/readme-images/404-page.png)
 - When an error occurs or a wrong input is given to the url the 404-page will show up with the information on how to be redirected to the landing page.
 
 ## Testing

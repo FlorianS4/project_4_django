@@ -105,6 +105,97 @@ No errors were shown for the CSS stylesheet from the [W3C CSS Validator](https:/
 
 #### PEP8
 
+No errors were shown for all the python files from the [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/).
+
+ - Gamecrit App
+
+<details>
+<summary>Gamecrit settings.py</summary>
+
+![Gamecrit settings.py testing](/docs/testing-images/python-testing/gamecrit-settings.py-testing.png)
+</details>
+
+<details>
+<summary>Gamecrit urls.py</summary>
+
+![Gamecrit urls.py testing](/docs/testing-images/python-testing/gamecrit-urls.py-testing.png)
+</details>
+
+- Gamecrit Contact App
+
+<details>
+<summary>Gamecrit Contact admin.py</summary>
+
+![Gamecrit Contact admin.py testing](/docs/testing-images/python-testing/gamecrit_contact-admin.py-testing.png)
+</details>
+
+<details>
+<summary>Gamecrit Contact apps.py</summary>
+
+![Gamecrit Contact apps.py testing](/docs/testing-images/python-testing/gamecrit_contact-apps.py-testing.png)
+</details>
+
+<details>
+<summary>Gamecrit Contact forms.py</summary>
+
+![Gamecrit Contact forms.py testing](/docs/testing-images/python-testing/gamecrit_contact-forms.py-testing.png)
+</details>
+
+<details>
+<summary>Gamecrit Contact models.py</summary>
+
+![Gamecrit Contact models.py testing](/docs/testing-images/python-testing/gamecrit_contact-models.py-testing.png)
+</details>
+
+<details>
+<summary>Gamecrit Contact urls.py</summary>
+
+![Gamecrit Contact urls.py testing](/docs/testing-images/python-testing/gamecrit_contact-urls.py-testing.png)
+</details>
+
+<details>
+<summary>Gamecrit Contact views.py</summary>
+
+![Gamecrit Contact views.py testing](/docs/testing-images/python-testing/gamecrit_contact-views.py-testing.png)
+</details>
+
+- Gamecrit Post App
+
+<details>
+<summary>Gamecrit Post admin.py</summary>
+
+![Gamecrit Post admin.py testing](/docs/testing-images/python-testing/gamecrit_post-admin.py-testing.png)
+</details>
+
+<details>
+<summary>Gamecrit Post apps.py</summary>
+
+![Gamecrit Post apps.py testing](/docs/testing-images/python-testing/gamecrit_post-apps.py-testing.png)
+</details>
+
+<details>
+<summary>Gamecrit Post forms.py</summary>
+
+![Gamecrit Post forms.py testing](/docs/testing-images/python-testing/gamecrit_post-forms.py-testing.png)
+</details>
+
+<details>
+<summary>Gamecrit Post models.py</summary>
+
+![Gamecrit Post models.py testing](/docs/testing-images/python-testing/gamecrit_post-models.py-testing.png)
+</details>
+
+<details>
+<summary>Gamecrit Post urls.py</summary>
+
+![Gamecrit Post urls.py testing](/docs/testing-images/python-testing/gamecrit_post-urls.py-testing.png)
+</details>
+
+<details>
+<summary>Gamecrit Post views.py</summary>
+
+![Gamecrit Post views.py testing](/docs/testing-images/python-testing/gamecrit_post-views.py-testing.png)
+</details>
 
 ### Accessibility
 #### Lighthouse Testing

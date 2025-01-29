@@ -230,13 +230,39 @@ The website was successfully tested on the following browsers:
 
 First Time User:
 
+- I want to read reviews about games I'm interested in.
+
+        * The user can visit the site and brows through the reviews to find games they are interessted in.
+
+- I want to read what other people think about my favorite game.
+
+        * The user can read blogs from other users. 
+
+- I'm looking for a new game to play and hope to find inspiration on this site.
+
+        * The user can read blogs and look for a game they would like.
+
 
 Returning User:
 
+- I want to write my own reviews and provide my own thoughts about a game i like.
+
+        * The user can write their own blogs, they just need to be looged in.
+
+- I want to like good reviews.
+
+        * The user has the ability to like blogs.
+
+- I want to wirte comments with my own thoughts about a game that somebody wrote a blog post for.
+
+        * The user can leave a comment underneath a blog post.
 
 
 Frequent User:
 
+- I want to bookmark good reviews so I can come back to the post after I finished the game.
+
+        * The user can bookmark posts.
 
 
 ### Manual Testing

@@ -183,6 +183,10 @@ I used [LucidChart](https://www.lucidchart.com/) to create a relationship diagra
 
 ## Agil Methology
 
+This project was designed with the Agile methodology, using the Project Board and Issues sections in GitHub.
+
+>[Project Board](https://github.com/users/FlorianS4/projects/8)
+
 ## Features
 ### Common Features
 #### Navbar

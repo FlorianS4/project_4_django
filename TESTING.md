@@ -20,8 +20,68 @@
 ### Validator Testing
 #### HTML
 
+No errors were shown for the index.HTML document on the W3C Markup Validation Service.
+I used [W3C HTML Markup Validator](https://validator.w3.org/) to validate HTML code.
 
+<details>
+<summary>Home Page</summary>
 
+![Home Page HTML validator](/docs/testing-images/html-testing/home-page-html-testing.png)
+</details>
+
+<details>
+<summary>Contact Page</summary>
+
+![Contact Page HTML validator](/docs/testing-images/html-testing/contact-page-html-testing.png)
+</details>
+
+<details>
+<summary>Blog Post Page</summary>
+
+![Blog Post Page HTML validator](/docs/testing-images/html-testing/blog-post-page-html-testing.png)
+</details>
+
+<details>
+<summary>Add Post Page</summary>
+
+![Add Post Page HTML validator](/docs/testing-images/html-testing/add-review-page-html-testing.png)
+</details>
+
+<details>
+<summary>Edit Post Page</summary>
+
+![Edit Post Page HTML validator](/docs/testing-images/html-testing/edit-review-page-html-testing.png)
+</details>
+
+<details>
+<summary>Delete Post Page</summary>
+
+![Delete Post Page HTML validator](/docs/testing-images/html-testing/delete-review-page-html-testing.png)
+</details>
+
+<details>
+<summary>HBookmark Page</summary>
+
+![Bookmark Page HTML validator](/docs/testing-images/html-testing/bookmark-page-html-testing.png)
+</details>
+
+<details>
+<summary>Register Page</summary>
+
+![Register Page HTML validator](/docs/testing-images/html-testing/register-page-html-testing.png)
+</details>
+
+<details>
+<summary>Login Page</summary>
+
+![Login Page HTML validator](/docs/testing-images/html-testing/login-page-html-testing.png)
+</details>
+
+<details>
+<summary>Logout Page</summary>
+
+![Logout Page HTML validator](/docs/testing-images/html-testing/logout-page-html-testing.png)
+</details>
 
 #### CSS
 

@@ -174,6 +174,13 @@ Register Page:
 
 ## Relationship Models
 
+I used [LucidChart](https://www.lucidchart.com/) to create a relationship diagram of my models.
+
+![ERD Diagram](/docs/readme-images/erd-diagram-gamecrit.png)
+
+- This diagram shows the relationships in my models and beetween one another.
+- I used the [Django AllAuth](https://docs.allauth.org/en/latest/) library for user authentification.
+
 ## Agil Methology
 
 ## Features
@@ -316,6 +323,7 @@ HTML, CSS, JavaScript, Python
 - [JShint JavaScript Validator](https://jshint.com/) to validate JS code.
 - [TinyPNG](https://tinypng.com/) - to compress images to reduce file size without a reduction in quality.
 - [Sweetalert2](https://sweetalert2.github.io/) - to make the alerts look better.
+- [LucidChart](https://www.lucidchart.com/) - was used to make the ERD Diagram.
 - [Django](https://www.djangoproject.com/) - used for the project's web framework. Is a Python framework.
 - [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction//) - used as a CSS framework.
 - [Cloudinary](https://cloudinary.com/) - online static file storage used for uploaded pictures.

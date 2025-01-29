@@ -37,67 +37,67 @@ Desktop
 <details>
 <summary>Home Page</summary>
 
-![Home Page Desktop](/docs/testing-images/home-page-desktop.png)
+![Home Page Desktop](/docs/testing-images/lighthouse-testing/home-page-desktop.png)
 </details>
 
 <details>
 <summary>Contact Page</summary>
 
-![Contact Page Desktop](/docs/testing-images/contact-page-desktop.png)
+![Contact Page Desktop](/docs/testing-images/lighthouse-testing/contact-page-desktop.png)
 </details>
 
 <details>
 <summary>Blog Post Page</summary>
 
-![Blog Post Page Desktop](/docs/testing-images/blog-post-page-desktop.png)
+![Blog Post Page Desktop](/docs/testing-images/lighthouse-testing/blog-post-page-desktop.png)
 </details>
 
 <details>
 <summary>Add Post Page</summary>
 
-![Add Post Page Desktop](/docs/testing-images/add-post-page-desktop.png)
+![Add Post Page Desktop](/docs/testing-images/lighthouse-testing/add-post-page-desktop.png)
 </details>
 
 <details>
 <summary>Edit Post Page</summary>
 
-![Edit Post Page Desktop](/docs/testing-images/edit-post-page-desktop.png)
+![Edit Post Page Desktop](/docs/testing-images/lighthouse-testing/edit-post-page-desktop.png)
 </details>
 
 <details>
 <summary>Delete Post Page</summary>
 
-![Delete Post Page Desktop](/docs/testing-images/delete-post-page-desktop.png)
+![Delete Post Page Desktop](/docs/testing-images/lighthouse-testing/delete-post-page-desktop.png)
 </details>
 
 <details>
 <summary>Bookmark Page</summary>
 
-![Bookmark Page Desktop](/docs/testing-images/bookmark-page-desktop.png)
+![Bookmark Page Desktop](/docs/testing-images/lighthouse-testing/bookmark-page-desktop.png)
 </details>
 
 <details>
 <summary>Register Page</summary>
 
-![Register Page Desktop](/docs/testing-images/register-page-desktop.png)
+![Register Page Desktop](/docs/testing-images/lighthouse-testing/register-page-desktop.png)
 </details>
 
 <details>
 <summary>Login Page</summary>
 
-![Login Page Desktop](/docs/testing-images/login-page-desktop.png)
+![Login Page Desktop](/docs/testing-images/lighthouse-testing/login-page-desktop.png)
 </details>
 
 <details>
 <summary>Logout Page</summary>
 
-![Logout Page Desktop](/docs/testing-images/logout-page-desktop.png)
+![Logout Page Desktop](/docs/testing-images/lighthouse-testing/logout-page-desktop.png)
 </details>
 
 <details>
 <summary>404 Page</summary>
 
-![404 Page Desktop](/docs/testing-images/404-page-desktop.png)
+![404 Page Desktop](/docs/testing-images/lighthouse-testing/404-page-desktop.png)
 </details>
 
 
@@ -107,67 +107,67 @@ Mobile
 <details>
 <summary>Home Page</summary>
 
-![Home Page Mobile](/docs/testing-images/home-page-mobile.png)
+![Home Page Mobile](/docs/testing-images/lighthouse-testing/home-page-mobile.png)
 </details>
 
 <details>
 <summary>Contact Page</summary>
 
-![Contact Page Mobile](/docs/testing-images/contact-page-mobile.png)
+![Contact Page Mobile](/docs/testing-images/lighthouse-testing/contact-page-mobile.png)
 </details>
 
 <details>
 <summary>Blog Post Page</summary>
 
-![Blog Post Page Mobile](/docs/testing-images/blog-post-page-mobile.png)
+![Blog Post Page Mobile](/docs/testing-images/lighthouse-testing/blog-post-page-mobile.png)
 </details>
 
 <details>
 <summary>Add Post Page</summary>
 
-![Add Post Page Mobile](/docs/testing-images/add-post-page-mobile.png)
+![Add Post Page Mobile](/docs/testing-images/lighthouse-testing/add-post-page-mobile.png)
 </details>
 
 <details>
 <summary>Edit Post Page</summary>
 
-![Edit Post Page Mobile](/docs/testing-images/edit-post-page-mobile.png)
+![Edit Post Page Mobile](/docs/testing-images/lighthouse-testing/edit-post-page-mobile.png)
 </details>
 
 <details>
 <summary>Delete Post Page</summary>
 
-![Delete Post Page Mobile](/docs/testing-images/delete-post-page-mobile.png)
+![Delete Post Page Mobile](/docs/testing-images/lighthouse-testing/delete-post-page-mobile.png)
 </details>
 
 <details>
 <summary>Bookmark Page</summary>
 
-![Bookmark Page Mobile](/docs/testing-images/bookmark-page-mobile.png)
+![Bookmark Page Mobile](/docs/testing-images/lighthouse-testing/bookmark-page-mobile.png)
 </details>
 
 <details>
 <summary>Register Page</summary>
 
-![Register Page Mobile](/docs/testing-images/register-page-mobile.png)
+![Register Page Mobile](/docs/testing-images/lighthouse-testing/register-page-mobile.png)
 </details>
 
 <details>
 <summary>Login Page</summary>
 
-![Login Page Mobile](/docs/testing-images/login-page-mobile.png)
+![Login Page Mobile](/docs/testing-images/lighthouse-testing/login-page-mobile.png)
 </details>
 
 <details>
 <summary>Logout Page</summary>
 
-![Logout Page Mobile](/docs/testing-images/logout-page-mobile.png)
+![Logout Page Mobile](/docs/testing-images/lighthouse-testing/logout-page-mobile.png)
 </details>
 
 <details>
 <summary>404 Page</summary>
 
-![404 Page Mobile](/docs/testing-images/404-page-mobile.png)
+![404 Page Mobile](/docs/testing-images/lighthouse-testing/404-page-mobile.png)
 </details>
 
 
@@ -178,31 +178,37 @@ I could not test pages as a sign-in user or pages only a sign-in user can see.
 <details>
 <summary>Home Page</summary>
 
-![Home Page Wave Testing]()
+![Home Page Wave Testing](/docs/testing-images/wave-images/home-page-wave.png)
 </details>
 
 <details>
 <summary>Contact Page</summary>
 
-![Contact Page Wave Testing]()
+![Contact Page Wave Testing](/docs/testing-images/wave-images/contact-page-wave.png)
 </details>
 
 <details>
 <summary>Blog Post Page</summary>
 
-![Blog Post Page Wave Testing]()
+![Blog Post Page Wave Testing](/docs/testing-images/wave-images/blog-post-page-wave.png)
 </details>
 
 <details>
 <summary>Register Page</summary>
 
-![Register Page Wave Testing]()
+![Register Page Wave Testing](/docs/testing-images/wave-images/register-page-wave.png)
 </details>
 
 <details>
 <summary>Login Page</summary>
 
-![Login Page Wave Testing]()
+![Login Page Wave Testing](/docs/testing-images/wave-images/login-page-wave.png)
+</details>
+
+<details>
+<summary>404 Page</summary>
+
+![404 Page Wave Testing](/docs/testing-images/wave-images/404-page-wave.png)
 </details>
 
 ### Links Testing

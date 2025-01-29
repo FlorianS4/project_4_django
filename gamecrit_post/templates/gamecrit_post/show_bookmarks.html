@@ -21,10 +21,10 @@
                             </a>
                             <div class="image-container">
                                 {% if "placeholder" in post.post_image.url %}
-                                <img class="card-img-top" id="image-size-1" src="{% static 'images/default.webp' %}"
+                                <img class="card-img-top image-size-1" src="{% static 'images/default.webp' %}"
                                     alt="placeholder image">
                                 {% else %}
-                                <img class="card-img-top" id="image-size-2" src="{{ post.post_image.url }}"
+                                <img class="card-img-top image-size-2" src="{{ post.post_image.url }}"
                                     alt="{{ post.alt_image }}">
                                 {% endif %}
                             </div>

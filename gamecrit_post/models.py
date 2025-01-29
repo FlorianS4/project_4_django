@@ -14,7 +14,7 @@ class Post(models.Model):
         User, on_delete=models.CASCADE, related_name="gamecrit_post_blog"
     )
     post_field = models.TextField()
-    youtube_link = models.URLField(max_length=300, default=False)
+    youtube_link = models.URLField(max_length=300)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     approved = models.BooleanField(default=False)

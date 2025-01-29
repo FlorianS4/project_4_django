@@ -118,7 +118,7 @@ body, .navbar-light, .footer {
     position: relative;
 }
 
-#image-size-1, #image-size-2 {
+.image-size-1, .image-size-2 {
     max-height: 270px;
 }
 
@@ -278,7 +278,6 @@ body, .navbar-light, .footer {
     #all-about-header {
         margin-top: 20%;
         width: 80%;
-        align-items: left;
         text-align: left;
         padding-bottom: 20px;
         padding-top: 15px;

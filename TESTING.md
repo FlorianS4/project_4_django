@@ -271,71 +271,73 @@ Frequent User:
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Clicking on Navbar elements | Clicking elements will lead user to corresponding pages | Clicking elements | Corresponding pages opens | Pass |
+| Register and Login buttons in the banner, if user isn't logged in | Clicking buttons will lead user to corresponding pages | Clicking buttons | Corresponding page opens | Pass |
+| Add Review and Logout buttons in the banner, if user is logged in | Clicking buttons will lead user to corresponding pages | Clicking buttons | Corresponding page opens | Pass |
+| Clicking Blog Post title | Clicking blog post will lead user to selected post | clicking blog post title | selected blog post opens | Pass |
+| Clicking PREV or NEXT in pagination | Site should jump to next or prev. page if there is one | clicking PREV or NEXT | Site jumps to next or prev page if there is one | Pass |
+| Clicking the social media buttons or on FlorianS4 in the footer | clicking the buttons will lead to the corresponding social media sites or to FlorianS4 GitHub profile | Clicking elements | social media sites and GitHub opens | Pass |
 
 - Contact Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| A contact form to get in contact with the Gamecrit Team | to get in contact | filled out the form with valid data and pressing submit | contact form shows up in admin panel and user gets an alert for successful | Pass |
+
 
 - Add Blog Post Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| A form for a logged in user to leave their own review | user can see their review after it is approved by admin | filling out the form with valid data and pressing upload | post shows up in admin panel for aprrovel | Pass |
+| Image upload | User can upload a picture corresponding to the  game they wrote a review for | adding a image | image shows up underneath the blog post name after approvel | Pass |
+| Site selects default image if user doesn't upload their own image | default image should show up underneath blog post title | uploaded review without image selected | default image shows up after post approvel | Pass |
 
 - Blog Post Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| User can see the blog post after clicking on the title | post opens after clicking title | title clicked | post opens | Pass |
+| Logged in user can like a post | heart goes red and number of likes goes up by 1 | clicking on the heart button | heart goes red and number of likes goes up by 1 | Pass |
+| Logged in user can bookmark a post | Bookmark symbol changes and post is added to bookmark page | clicking the bookmark symbol | post goes to bookmark page and is bookmarked in admin panel | Pass |
+| Logged in user can leave a comment | user comment shows up after approvel by admin | wrote a comment | comment shows up after approvel through admin | Pass |
+| author of comment can edit the comment | comment will be updated after approvel | edit a comment | message for user will be displayed, that comment is awaitng approvel and will displayed after approvel through admin | Pass |
 
 - Edit Blog Post Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Author of blog post can edit the post | Edits will show up in post | edited a post | Updated are showing up in post | Pass |
 
 - Delete Blog Post Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Author of blog post can delete a post | Post will be deleted | deleting a post | post will be deleted | Pass |
 
 - Bookmark Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| bookmark page for logged in users | bookmarked post will show up on bookmark page | visiting the bookmark page | bookmarked posts are showing up | Pass |
 
 - Register Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| register page for new users | page for new users to register | registering a new user | new user will be logged in and shows up in admin panel  | Pass |
 
 - Login Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| login page for existing users | existing user can log in | log in performed as existing user | existing user signed in | Pass |
 
 - Logout Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| User can log out of their account | user will be logged out | log out performed as existing user | user logged out | Pass |
 
 - 404 Page
 

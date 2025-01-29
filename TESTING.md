@@ -37,67 +37,67 @@ Desktop
 <details>
 <summary>Home Page</summary>
 
-![Home Page Desktop]()
+![Home Page Desktop](/docs/testing-images/home-page-desktop.png)
 </details>
 
 <details>
 <summary>Contact Page</summary>
 
-![Contact Page Desktop]()
+![Contact Page Desktop](/docs/testing-images/contact-page-desktop.png)
 </details>
 
 <details>
 <summary>Blog Post Page</summary>
 
-![Blog Post Page Desktop]()
+![Blog Post Page Desktop](/docs/testing-images/blog-post-page-desktop.png)
 </details>
 
 <details>
 <summary>Add Post Page</summary>
 
-![Add Post Page Desktop]()
+![Add Post Page Desktop](/docs/testing-images/add-post-page-desktop.png)
 </details>
 
 <details>
 <summary>Edit Post Page</summary>
 
-![Edit Post Page Desktop]()
+![Edit Post Page Desktop](/docs/testing-images/edit-post-page-desktop.png)
 </details>
 
 <details>
 <summary>Delete Post Page</summary>
 
-![Delete Post Page Desktop]()
+![Delete Post Page Desktop](/docs/testing-images/delete-post-page-desktop.png)
 </details>
 
 <details>
 <summary>Bookmark Page</summary>
 
-![Bookmark Page Desktop]()
+![Bookmark Page Desktop](/docs/testing-images/bookmark-page-desktop.png)
 </details>
 
 <details>
 <summary>Register Page</summary>
 
-![Register Page Desktop]()
+![Register Page Desktop](/docs/testing-images/register-page-desktop.png)
 </details>
 
 <details>
 <summary>Login Page</summary>
 
-![Login Page Desktop]()
+![Login Page Desktop](/docs/testing-images/login-page-desktop.png)
 </details>
 
 <details>
 <summary>Logout Page</summary>
 
-![Logout Page Desktop]()
+![Logout Page Desktop](/docs/testing-images/logout-page-desktop.png)
 </details>
 
 <details>
 <summary>404 Page</summary>
 
-![404 Page Desktop]()
+![404 Page Desktop](/docs/testing-images/404-page-desktop.png)
 </details>
 
 
@@ -107,67 +107,67 @@ Mobile
 <details>
 <summary>Home Page</summary>
 
-![Home Page Mobile]()
+![Home Page Mobile](/docs/testing-images/home-page-mobile.png)
 </details>
 
 <details>
 <summary>Contact Page</summary>
 
-![Contact Page Mobile]()
+![Contact Page Mobile](/docs/testing-images/contact-page-mobile.png)
 </details>
 
 <details>
 <summary>Blog Post Page</summary>
 
-![Blog Post Page Mobile]()
+![Blog Post Page Mobile](/docs/testing-images/blog-post-page-mobile.png)
 </details>
 
 <details>
 <summary>Add Post Page</summary>
 
-![Add Post Page Mobile]()
+![Add Post Page Mobile](/docs/testing-images/add-post-page-mobile.png)
 </details>
 
 <details>
 <summary>Edit Post Page</summary>
 
-![Edit Post Page Mobile]()
+![Edit Post Page Mobile](/docs/testing-images/edit-post-page-mobile.png)
 </details>
 
 <details>
 <summary>Delete Post Page</summary>
 
-![Delete Post Page Mobile]()
+![Delete Post Page Mobile](/docs/testing-images/delete-post-page-mobile.png)
 </details>
 
 <details>
 <summary>Bookmark Page</summary>
 
-![Bookmark Page Mobile]()
+![Bookmark Page Mobile](/docs/testing-images/bookmark-page-mobile.png)
 </details>
 
 <details>
 <summary>Register Page</summary>
 
-![Register Page Mobile]()
+![Register Page Mobile](/docs/testing-images/register-page-mobile.png)
 </details>
 
 <details>
 <summary>Login Page</summary>
 
-![Login Page Mobile]()
+![Login Page Mobile](/docs/testing-images/login-page-mobile.png)
 </details>
 
 <details>
 <summary>Logout Page</summary>
 
-![Logout Page Mobile]()
+![Logout Page Mobile](/docs/testing-images/logout-page-mobile.png)
 </details>
 
 <details>
 <summary>404 Page</summary>
 
-![404 Page Mobile]()
+![404 Page Mobile](/docs/testing-images/404-page-mobile.png)
 </details>
 
 

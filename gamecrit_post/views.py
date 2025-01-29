@@ -10,6 +10,7 @@ from .forms import GamecritPostForm, GameCritCommentForm
 
 # Create your views here.
 
+
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("created_on")
     template_name = "gamecrit_post/index.html"
@@ -32,7 +33,8 @@ class AddGamecritPost(CreateView):
         return super(AddGamecritPost, self).form_valid(form)
 
 
-class DeleteGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.DeleteView):
+class DeleteGamecritPost(LoginRequiredMixin,
+                         UserPassesTestMixin, generic.DeleteView):
     """
     Add gamecrit delete view
     A user that is logged in can delete one of his own post
@@ -48,11 +50,14 @@ class DeleteGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.Delete
         """
         return self.request.user == self.get_object().username
 
-class EditGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
+
+class EditGamecritPost(LoginRequiredMixin,
+                       UserPassesTestMixin, generic.UpdateView):
     """
     Add gamecrit edit post view
     The user who created the post can edit it
-    usde this video as tutorial: https://www.youtube.com/watch?v=JzDBCZTgVyw&t=1s
+    usde this video as tutorial:
+    https://www.youtube.com/watch?v=JzDBCZTgVyw&t=1s
     """
     template_name = "gamecrit_post/edit_gamecrit_post.html"
     model = Post
@@ -65,21 +70,23 @@ class EditGamecritPost(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateVi
         """
         return self.request.user == self.get_object().username
 
+
 def display_game_review(request, slug):
     """
-    displays one gamecrit post and add ability to comment on it, as a logged in user    
+    displays one gamecrit post and add ability
+    to comment on it, as a logged in user
     """
     queryset = Post.objects.filter(status=1)
     gamecrit_post = get_object_or_404(queryset, slug=slug)
     comments = gamecrit_post.comments.all().order_by("-created_on")
     comment_count = gamecrit_post.comments.filter(approved=True).count()
     gamecrit_post_blog_liked = False
-    if gamecrit_post.gamecrit_post_blog_likes.filter(id=request.user.id).exists():
+    if gamecrit_post.gamecrit_post_blog_likes.filter(
+            id=request.user.id).exists():
         gamecrit_post_blog_liked = True
     is_bookmarked = False
     if gamecrit_post.bookmarks.filter(id=request.user.id).exists():
         is_bookmarked = True
-
 
     if request.method == "POST":
         comment_form = GameCritCommentForm(data=request.POST)
@@ -91,7 +98,7 @@ def display_game_review(request, slug):
             messages.add_message(
                 request, messages.SUCCESS,
                 'Thank you for the comment. It is now in queue to be approved!'
-    )
+            )
 
     comment_form = GameCritCommentForm()
 
@@ -99,13 +106,14 @@ def display_game_review(request, slug):
         request,
         "gamecrit_post/display_game_review.html",
         {"gamecrit_post": gamecrit_post,
-        "comments": comments,
-        "comment_count": comment_count,
-        "comment_form": comment_form,
-        "gamecrit_post_blog_liked": gamecrit_post_blog_liked,
-        "is_bookmarked": is_bookmarked,
-        },
+         "comments": comments,
+         "comment_count": comment_count,
+         "comment_form": comment_form,
+         "gamecrit_post_blog_liked": gamecrit_post_blog_liked,
+         "is_bookmarked": is_bookmarked,
+         },
     )
+
 
 def comment_edit(request, slug, comment_id):
     """
@@ -123,7 +131,8 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            messages.add_message(request, messages.ERROR,
+                                 'Error updating comment!')
 
     return HttpResponseRedirect(reverse('display_game_review', args=[slug]))
 
@@ -137,14 +146,15 @@ def comment_delete(request, slug, comment_id):
     comment = get_object_or_404(Comment, pk=comment_id)
     if comment.username == request.user:
         comment.delete()
-        messages.add_message(request, messages.SUCCESS, 'Your comment was deleted!')
+        messages.add_message(request, messages.SUCCESS,
+                             'Your comment was deleted!')
     else:
         messages.add_message(
             request, messages.ERROR, 'You can only delete your own comments!')
     return HttpResponseRedirect(reverse('display_game_review', args=[slug]))
 
-class AddLike(View):
 
+class AddLike(View):
 
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
@@ -152,7 +162,8 @@ class AddLike(View):
             post.gamecrit_post_blog_likes.remove(request.user)
         else:
             post.gamecrit_post_blog_likes.add(request.user)
-        return HttpResponseRedirect(reverse('display_game_review', args=[slug]))
+        return HttpResponseRedirect(reverse(
+                'display_game_review', args=[slug]))
 
 
 class BookmarkPost(LoginRequiredMixin, View):
@@ -172,8 +183,9 @@ class BookmarkPost(LoginRequiredMixin, View):
             post.bookmarks.add(request.user)
             messages.success(self.request, 'Post added to bookmarks')
 
+        return HttpResponseRedirect(reverse(
+            'display_game_review', args=[slug]))
 
-        return HttpResponseRedirect(reverse('display_game_review', args=[slug]))
 
 class ShowBookmarks(LoginRequiredMixin, generic.ListView):
     """

@@ -173,6 +173,37 @@ Mobile
 
 #### Wave Testing
 
+I could not test pages as a sign-in user or pages only a sign-in user can see. 
+
+<details>
+<summary>Home Page</summary>
+
+![Home Page Wave Testing]()
+</details>
+
+<details>
+<summary>Contact Page</summary>
+
+![Contact Page Wave Testing]()
+</details>
+
+<details>
+<summary>Blog Post Page</summary>
+
+![Blog Post Page Wave Testing]()
+</details>
+
+<details>
+<summary>Register Page</summary>
+
+![Register Page Wave Testing]()
+</details>
+
+<details>
+<summary>Login Page</summary>
+
+![Login Page Wave Testing]()
+</details>
 
 ### Links Testing
 - All internal links are working correctly and redirecting to the correct sections.

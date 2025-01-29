@@ -7,6 +7,7 @@
         - [HTML](#html)
         - [CSS](#css)
         - [JavaScript](#javascript)
+        - [PEP8](#pep8)
 - [Accessibility](#accessibility)
         - [Lighthouse Testing](#lighthouse-testing)
         - [Wave Testing](#wave-testing)
@@ -20,8 +21,7 @@
 ### Validator Testing
 #### HTML
 
-No errors were shown for the index.HTML document on the W3C Markup Validation Service.
-I used [W3C HTML Markup Validator](https://validator.w3.org/) to validate HTML code.
+No errors were shown for the index.HTML document on the [W3C Markup Validation](https://validator.w3.org/) Service.
 
 <details>
 <summary>Home Page</summary>
@@ -85,9 +85,25 @@ I used [W3C HTML Markup Validator](https://validator.w3.org/) to validate HTML c
 
 #### CSS
 
+No errors were shown for the CSS stylesheet from the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+<details>
+<summary>CSS validation</summary>
+
+![CSS validation](/docs/testing-images/css-testing/w3c-css-validation.png)
+</details>
 
 #### JavaScript
 
+[JSHint](https://jshint.com/) was used to validate the JavaScript.
+
+<details>
+<summary>comments.js</summary>
+
+![comments.js validation](/docs/testing-images/js-testing/comments.js-testing.png)
+</details>
+
+#### PEP8
 
 
 ### Accessibility

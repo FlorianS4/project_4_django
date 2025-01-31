@@ -1,5 +1,17 @@
 # Gamecrit blog post side
 
+You like video games and you want to share your experience with them with others.
+Then gamecrit is the perfect site for you!
+
+Leave your review.
+Like other reviews.
+Engage in the comment section with other users!
+Bookmark your favorite reviews, for inspiration.
+And maybe you find the next game you want to play through a review on our site, who knows!
+
+Visit Gamecrit [here](https://project-4-django-34f4c5eeb5b8.herokuapp.com/)!!
+
+
 
 
 ## Content
@@ -189,6 +201,11 @@ This project was designed with the Agile methodology, using the Project Board an
 
 ## Features
 ### Common Features
+
+#### Favicon
+
+![Favicon](/docs/readme-images/favicon.png)
+
 #### Navbar
 
 ![Navbar desktop login view](/docs/readme-images/navbar-login-desktop.png)
@@ -320,8 +337,6 @@ HTML, CSS, JavaScript, Python
 - [Coolors](https://coolors.co/) - to create color palette.
 - [Wave](https://wave.webaim.org/) to test accessibility.
 - [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse) - to test performance and accessibility.
-- [Responsinator](http://www.responsinator.com/) to verify responsiveness especially usage for mobile devices.
-- [Am I Responsive](https://ui.dev/amiresponsive) to test responsiveness.
 - [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS code.
 - [W3C HTML Markup Validator](https://validator.w3.org/) to validate HTML code.
 - [JShint JavaScript Validator](https://jshint.com/) to validate JS code.

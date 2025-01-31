@@ -1,6 +1,8 @@
 # Gamecrit Site - Testing
 
 
+Visit the deployed site: [Gamecrit](https://project-4-django-34f4c5eeb5b8.herokuapp.com/)
+
 
 ## Content
 - [Validator Testing](#validator-testing)

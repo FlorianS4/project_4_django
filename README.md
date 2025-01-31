@@ -413,7 +413,8 @@ How to clone:
 - [Stack Overflow](https://stackoverflow.com/)
 - [W3Schools](https://www.w3schools.com/)
 ### Media
-- 
+- [Banner](https://www.pexels.com/photo/close-up-photo-of-gaming-keyboard-2115257/)
+- [Default Image](https://www.pexels.com/photo/low-light-photo-of-nes-controller-1637436/) - This Image is used when the user doesn't upload a image for the review themself.
 
 ## Fixed Bugs
 - 

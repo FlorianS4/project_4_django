@@ -341,7 +341,6 @@ HTML, CSS, JavaScript, Python
 - [W3C HTML Markup Validator](https://validator.w3.org/) to validate HTML code.
 - [JShint JavaScript Validator](https://jshint.com/) to validate JS code.
 - [TinyPNG](https://tinypng.com/) - to compress images to reduce file size without a reduction in quality.
-- [Sweetalert2](https://sweetalert2.github.io/) - to make the alerts look better.
 - [LucidChart](https://www.lucidchart.com/) - was used to make the ERD Diagram.
 - [Django](https://www.djangoproject.com/) - used for the project's web framework. Is a Python framework.
 - [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction//) - used as a CSS framework.
@@ -416,12 +415,10 @@ How to clone:
 
 ## Credits
 ### Content
-- 
-- 
-
-- 
-
-- 
+- For testing porpose I used the code institute layouts for forms and changed it.
+- https://www.youtube.com/watch?v=nFa3lC105dM - Used as help for deleting reviews. Adapted the code.
+- https://www.youtube.com/watch?v=JzDBCZTgVyw&t=211s - Used as help for editing reviews. Adapted the code.
+- https://www.youtube.com/watch?v=JzDBCZTgVyw&t=1s - Used as help for my like buttons. Adapted the code.
 
 ### Resources Used
 - Code Institute's lessons (love maths project)
@@ -430,26 +427,40 @@ How to clone:
 ### Media
 - [Banner](https://www.pexels.com/photo/close-up-photo-of-gaming-keyboard-2115257/)
 - [Default Image](https://www.pexels.com/photo/low-light-photo-of-nes-controller-1637436/) - This Image is used when the user doesn't upload a image for the review themself.
+- [Favicon](https://icons8.de/icons/set/controller)
 
 ## Fixed Bugs
-- 
+- Gamecrit contact error: Does not appear to have any patterns in it.
 
-    * 
+    * Added a s to "urlpattern" as there was a spelling mistake.
 
-- 
+- My Project wasn't deploying to Heroku.
 
-    * 
+    * Wrong naming for project in procfile.
 
-- 
+- Delete Gamecrit Post class wasn't working correctly in views.py.
 
-    * 
+    * Deleted form_class from views.py as it was added by mistake.
 
-- 
+- Gamecrit Contact Form wasn't showing up due to wrong naming conventions and beeing wired up wrongly.
 
-    * 
+    * Wired up urls and HTML template correctly to display form and added Meta class for ordering and __ str __ method for the admin panel.
+
+- Wrong field reference in Post model so the view and later on the templates could not use it.
+
+    * Changed reference fields names and added missing fields. 
+
+- Wrong field reference in Comment model so the view and later on the templates could not use it.
+
+    * Changed reference fields names and added missing fields.
+
+- My signup page wasn't working correctly. 
+
+    * Added correct code institute sign up page.
 
 ## Future Content
-- 
+- User should be able to like comments from other users.
+- A search function. 
 
 ## Acknowledgments
 My mentor Jubril Akolade for his guidance, input and support.

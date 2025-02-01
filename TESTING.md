@@ -62,7 +62,7 @@ No errors were shown for the index.HTML document on the [W3C Markup Validation](
 </details>
 
 <details>
-<summary>HBookmark Page</summary>
+<summary>Bookmark Page</summary>
 
 ![Bookmark Page HTML validator](/docs/testing-images/html-testing/bookmark-page-html-testing.png)
 </details>
@@ -407,14 +407,14 @@ First Time User:
 
         * The user can read blogs from other users. 
 
-- I'm looking for a new game to play and hope to find inspiration on this site.
+- I want to play a new game and hope to find inspiration.
 
         * The user can read blogs and look for a game they would like.
 
 
 Returning User:
 
-- I want to write my own reviews and provide my own thoughts about a game i like.
+- I want to write my own reviews and provide my own thoughts about a game I like.
 
         * The user can write their own blogs, they just need to be looged in.
 
@@ -422,14 +422,14 @@ Returning User:
 
         * The user has the ability to like blogs.
 
-- I want to wirte comments with my own thoughts about a game that somebody wrote a blog post for.
+- I want to write comments with my own thoughts about a game that somebody wrote a blog post for.
 
         * The user can leave a comment underneath a blog post.
 
 
 Frequent User:
 
-- I want to bookmark good reviews so I can come back to the post after I finished the game.
+- I want to bookmark good reviews so I can come back to the post after I finish the game.
 
         * The user can bookmark posts.
 
@@ -516,6 +516,4 @@ Frequent User:
 |  |  |  |  |  |
 
 
-I also used following sides to test responsivness
-- [Responsinator]()
-- [Am I Responsive]()
+I used Google Dev Tools to test responsivness, because Responsinator und Am I Responsive didn't work.

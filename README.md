@@ -55,7 +55,8 @@ Visit Gamecrit [here](https://project-4-django-34f4c5eeb5b8.herokuapp.com/)!!
     - [Running the project locally](#running-the-project-locally)
     - [Heroku set up](#heroku-set-up)
 - [Credits](#credits)
-    - [Content](#content)
+    - [Code](#code)
+    - [Similar students projects](#similar-students-projects)
     - [Resources Used](#resources-used)
     - [Media](#media)
 - [Fixed Bugs](#fixed-bugs)
@@ -68,7 +69,7 @@ Visit Gamecrit [here](https://project-4-django-34f4c5eeb5b8.herokuapp.com/)!!
 - to provide the user with the ability to create their post about a video game with their opinion.
 - to provide the user with the ability to leave a comment underneath a blog post.
 - to provide the user with the ability to edit or delete the post or a comment they created.
-- to provide the user with the ability to like a post.
+- to provide the user with the ability to like and bookmark a post.
 - to provide the user with a bookmark section, where they can see their bookmarked posts.
 - to provide the user with a possibility to get in contact with the side owner.
 
@@ -77,15 +78,15 @@ Visit Gamecrit [here](https://project-4-django-34f4c5eeb5b8.herokuapp.com/)!!
 #### First Time User
 - I want to read reviews about games I'm interested in.
 - I want to read what other people think about my favorite game.
-- I'm looking for a new game to play and hope to find inspiration on this site.
+- I want to play a new game and hope to find inspiration.
 
 #### Returning User
-- I want to write my own reviews and provide my own thoughts about a game i like.
+- I want to write my own reviews and provide my own thoughts about a game I like.
 - I want to like good reviews.
-- I want to wirte comments with my own thoughts about a game that somebody wrote a blog post for.
+- I want to write comments with my own thoughts about a game that somebody wrote a blog post for.
 
 #### Frequent User
-- I want to bookmark good reviews so I can come back to the post after I finished the game.
+- I want to bookmark good reviews so I can come back to the post after I finish the game.
 
 ## Design
 ### Typography
@@ -99,7 +100,7 @@ Visit Gamecrit [here](https://project-4-django-34f4c5eeb5b8.herokuapp.com/)!!
 - ![Stencil font image](/docs/readme-images/font-image-banner.png)
 
     [Stencil](https://fonts.google.com/specimen/Stardos+Stencil?preview.text=GAMECRIT&query=Stencil)
-- Stencil was picked as font for my Banner heading.
+- Stencil was picked as font for my hero image heading.
 
 - Sans Serif was chosen as a backup font, in case the main font is not imported into the website, or there is a problem with the browser.
 
@@ -212,11 +213,11 @@ This project was designed with the Agile methodology, using the Project Board an
 
 ![Navbar desktop logged in view](/docs/readme-images/navbar-loggedin-desktop.png)
 
-- The navbar gives the user options depending if they are already logged in or not.
+- The navbar gives the user menu options depending if they are already logged in or not.
 
 ![Navbar mobile view](/docs/readme-images/navbar-mobile.png)
 
-- The navbar on mobile has a drop down menu.
+- The navbar on mobile view has a drop down menu.
 
 #### Footer
 
@@ -224,7 +225,7 @@ This project was designed with the Agile methodology, using the Project Board an
 
 ![Footer mobile view](/docs/readme-images/footer-mobile.png)
 
-- The footer has a link to my GitHub aswell as links to popular social media sides.
+- The footer has a link to my GitHub as well as links to popular social media sites.
 
 ### Main Page
 #### Gamecrit Banner
@@ -232,7 +233,7 @@ This project was designed with the Agile methodology, using the Project Board an
 ![Banner desktop login view](/docs/readme-images/banner-desktop-login.png)
 ![Banner desktop logged in view](/docs/readme-images/banner-desktop-loggedin.png)
 
-- In the banner the user has options depending if they are looged in or not.
+- In the banner the user has options of buttons depending if they are logged in or not.
 - The same options exists on mobile.
 
 ![Banner mobile view](/docs/readme-images/banner-mobile-view.png)
@@ -243,8 +244,9 @@ This project was designed with the Agile methodology, using the Project Board an
 
 ![Gamecrit post cards mobile view](/docs/readme-images/mobile-blog-cards-view.png)
 
-- The Site displays the written blogs with a picture, if the user added one, otherwise it picks the default picture.
+The Site displays the written blogs with a picture in smaller cards. If the user added an image him-/herself it will be here, otherwise it picks the default picture.
 - The author and the date when the blog post was created is also displayed.
+- The user can click on a card to see the gamecrit post.
 
 #### Pagination
 
@@ -269,7 +271,7 @@ This project was designed with the Agile methodology, using the Project Board an
 
 ![Add Gamecrit Blog Post Page](/docs/readme-images/add-gamecrit-blog-post.png)
 
-- The user can add his own post on this side.
+- The user can add his/her own post on this site.
 - The title, text about the game and a video link are mandatory, the picture is not.
 - If the user chooses to not upload a picture, the site will automaticly pick the default picture.
 - After uploading the post, the superuser has to verify the post and set it to public, so other people can see it.
@@ -340,6 +342,7 @@ HTML, CSS, JavaScript, Python
 - [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS code.
 - [W3C HTML Markup Validator](https://validator.w3.org/) to validate HTML code.
 - [JShint JavaScript Validator](https://jshint.com/) to validate JS code.
+- [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) to validate Python code.
 - [TinyPNG](https://tinypng.com/) - to compress images to reduce file size without a reduction in quality.
 - [LucidChart](https://www.lucidchart.com/) - was used to make the ERD Diagram.
 - [Django](https://www.djangoproject.com/) - used for the project's web framework. Is a Python framework.
@@ -378,6 +381,11 @@ Instructions:
 - Enter a application name.
 - Select a region.
 - Click "Create App".
+- Go to the deploy option.
+- Select GitHub as your deployment option.
+- Confirm the connection to Github and choose the correct repository.
+- Select "Enable Automatic" and "Deploy branch" with the selection main.
+- Select "view" to see the live website.
 
 ### Heroku set up
 
@@ -414,14 +422,26 @@ How to clone:
 - A clone will be created.
 
 ## Credits
-### Content
-- For testing porpose I used the code institute layouts for forms and changed it.
-- https://www.youtube.com/watch?v=nFa3lC105dM - Used as help for deleting reviews. Adapted the code.
-- https://www.youtube.com/watch?v=JzDBCZTgVyw&t=211s - Used as help for editing reviews. Adapted the code.
-- https://www.youtube.com/watch?v=JzDBCZTgVyw&t=1s - Used as help for my like buttons. Adapted the code.
+### Code
+
+This project was based on the Code Institute - I think therefore I Blog walkthrough.
+The walkthrough provided a base for a standard blog. I customised a lot of the layouts and styling of this base with Bootsrap and custom CSS.
+
+For help with creating a blog post and for different modesl I used [Codemy.com](https://www.youtube.com/@Codemycom/featured) on YouTube and [Dee Mc](https://www.youtube.com/@IonaFrisbee) aswell on YouTube.
+
+- I used [this video](https://www.youtube.com/watch?v=vXMTp_1_L7Y) for help with creating a post.
+- I used [this video](https://www.youtube.com/watch?v=nFa3lC105dM) for help with deleting a post.
+- I used [this video](https://www.youtube.com/watch?v=JzDBCZTgVyw&t=1s) for help with editing a post.
+- I used [this video](https://www.youtube.com/watch?v=e49QSMHXM5k&list=PLCC34OHNcOtoQCR6K4RgBWNi3-7yGgg7b&index=17) for help with storing and displaying likes correctly.
+
+- I used the way [AliOKeeffe](https://github.com/AliOKeeffe) handled her project's bookmarking section in [this project](https://github.com/AliOKeeffe/PP4_My_Meal_Planner) as a reference and built on it for my own bookmars.
+
+### Similar students projects
+
+When I browsed through the peer review slack channel I found [this project](https://github.com/nazar0309/Game-Glance) by [nazar0309](https://github.com/nazar0309) and I really enjoyed the topic as my main hobby always has been gaming. So I took it as an inspiration for my own project.
 
 ### Resources Used
-- Code Institute's lessons (love maths project)
+- Code Institute's lessons (I think therefore I Blog)
 - [Stack Overflow](https://stackoverflow.com/)
 - [W3Schools](https://www.w3schools.com/)
 ### Media

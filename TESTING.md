@@ -1,5 +1,5 @@
 # Gamecrit Site - Testing
-
+![Gamecrit image](/docs/readme-images/gamecrit-pic-for-readme.png)
 
 Visit the deployed site: [Gamecrit](https://project-4-django-34f4c5eeb5b8.herokuapp.com/)
 

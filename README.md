@@ -3,6 +3,8 @@
 You like video games and you want to share your experience with them with others.
 Then gamecrit is the perfect site for you!
 
+![Gamecrit image](/docs/readme-images/gamecrit-pic-for-readme.png)
+
 Leave your review.
 Like other reviews.
 Engage in the comment section with other users!

@@ -1,4 +1,4 @@
-# Gamecrit blog post side
+# Gamecrit blog post site
 
 You like video games and you want to share your experience you gained from them with others.
 Then gamecrit is the perfect site for you!

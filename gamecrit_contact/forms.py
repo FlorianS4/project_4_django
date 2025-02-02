@@ -8,4 +8,4 @@ class GameCritContactForm(forms.ModelForm):
     """
     class Meta: 
         model = GameCritContact
-        fields = ('contact_name', 'contact_email', 'contact_field')
+        fields = ('contact_email', 'contact_field')

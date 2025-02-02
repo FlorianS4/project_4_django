@@ -8,7 +8,7 @@ from django_summernote.admin import SummernoteModelAdmin
 @admin.register(GameCritContact)
 class ContactAdmin(SummernoteModelAdmin):
 
-    list_display = ('contact_name', 'contact_email', 'contact_field',)
-    search_fields = ['contact_name', 'contact_email', ]
-    list_filter = ('contact_name',)
+    list_display = ('contact_email', 'contact_field',)
+    search_fields = ['contact_email', ]
+    list_filter = ('contact_email',)
     summernote_fields = ('contact_field',)

@@ -516,4 +516,4 @@ Frequent User:
 |  |  |  |  |  |
 
 
-I used Google Dev Tools to test responsivness, because Responsinator und Am I Responsive didn't work.
+I used Google Dev Tools to test responsivness for all device sizes as well es with my device testing.

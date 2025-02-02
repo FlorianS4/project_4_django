@@ -1,15 +1,19 @@
 # Gamecrit blog post side
 
-You like video games and you want to share your experience with them with others.
+You like video games and you want to share your experience you gained from them with others.
 Then gamecrit is the perfect site for you!
 
 ![Gamecrit image](/docs/readme-images/gamecrit-pic-for-readme.png)
 
 Leave your review.
+
 Like other reviews.
+
 Engage in the comment section with other users!
+
 Bookmark your favorite reviews, for inspiration.
-And maybe you find the next game you want to play through a review on our site, who knows!
+
+Then you will maybe you find the next game you want to play through a review on our site, who knows!
 
 Visit Gamecrit [here](https://project-4-django-34f4c5eeb5b8.herokuapp.com/)!!
 
@@ -194,7 +198,7 @@ I used [LucidChart](https://www.lucidchart.com/) to create a relationship diagra
 ![ERD Diagram](/docs/readme-images/erd-diagram-gamecrit.png)
 
 - This diagram shows the relationships in my models and beetween one another.
-- I used the [Django AllAuth](https://docs.allauth.org/en/latest/) library for user authentification.
+- I used the [Django AllAuth](https://docs.allauth.org/en/latest/) library for user authentification, which created my user model for me.
 
 ## Agil Methology
 
@@ -401,7 +405,7 @@ Instructions:
     - `CLOUDINARY_URL` (Your Cloudinary API key)
     - `DATABASE_URL` (Your Postgres SQL API key)
     - `SECRET_KEY` (Your secret key)
-- Additionla Heroku Files:
+- Additional Heroku Files:
     - Requirements.txt file
     - Create Procfile via gunicorn
 
@@ -410,6 +414,9 @@ Instructions:
         ```
 
 ### Running the project locally
+Additional files needed for installation of dependencies:
+    Requirements.txt file
+
 How to Fork:
 - Login to Github
 - Go to the GitHub repository: Project_4_django
@@ -429,14 +436,14 @@ How to clone:
 This project was based on the Code Institute - I think therefore I Blog walkthrough.
 The walkthrough provided a base for a standard blog. I customised a lot of the layouts and styling of this base with Bootsrap and custom CSS.
 
-For help with creating a blog post and for different modesl I used [Codemy.com](https://www.youtube.com/@Codemycom/featured) on YouTube and [Dee Mc](https://www.youtube.com/@IonaFrisbee) aswell on YouTube.
+For help with creating a blog post and for different models I used [Codemy.com](https://www.youtube.com/@Codemycom/featured) on YouTube and [Dee Mc](https://www.youtube.com/@IonaFrisbee) aswell on YouTube.
 
 - I used [this video](https://www.youtube.com/watch?v=vXMTp_1_L7Y) for help with creating a post.
 - I used [this video](https://www.youtube.com/watch?v=nFa3lC105dM) for help with deleting a post.
 - I used [this video](https://www.youtube.com/watch?v=JzDBCZTgVyw&t=1s) for help with editing a post.
 - I used [this video](https://www.youtube.com/watch?v=e49QSMHXM5k&list=PLCC34OHNcOtoQCR6K4RgBWNi3-7yGgg7b&index=17) for help with storing and displaying likes correctly.
 
-- I used the way [AliOKeeffe](https://github.com/AliOKeeffe) handled her project's bookmarking section in [this project](https://github.com/AliOKeeffe/PP4_My_Meal_Planner) as a reference and built on it for my own bookmars.
+- I used the way [AliOKeeffe](https://github.com/AliOKeeffe) handled her project's bookmarking section in [this project](https://github.com/AliOKeeffe/PP4_My_Meal_Planner) as a reference and built on it for my own bookmarks.
 
 ### Similar students projects
 
@@ -452,7 +459,7 @@ When I browsed through the peer review slack channel I found [this project](http
 - [Favicon](https://icons8.de/icons/set/controller)
 
 ## Fixed Bugs
-- Gamecrit contact error: Does not appear to have any patterns in it.
+- Gamecrit contact error: Does not appear to have any url path in it.
 
     * Added a s to "urlpattern" as there was a spelling mistake.
 
@@ -464,7 +471,7 @@ When I browsed through the peer review slack channel I found [this project](http
 
     * Deleted form_class from views.py as it was added by mistake.
 
-- Gamecrit Contact Form wasn't showing up due to wrong naming conventions and beeing wired up wrongly.
+- Gamecrit Contact Form wasn't showing up because of wrong naming conventions and beeing wired up incorrect.
 
     * Wired up urls and HTML template correctly to display form and added Meta class for ordering and __ str __ method for the admin panel.
 
@@ -478,7 +485,7 @@ When I browsed through the peer review slack channel I found [this project](http
 
 - My signup page wasn't working correctly. 
 
-    * Added correct code institute sign up page.
+    * Added correct code institute sign up page template.
 
 ## Future Content
 - User should be able to like comments from other users.
